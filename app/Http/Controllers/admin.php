@@ -18,6 +18,10 @@ class admin extends Controller
         Auth::logout();
         return redirect()->route('loginscreen');
     }
+    public function showFeedback(){
+        $contacts =DB::table('contact')->find(2);
+        return view('admin.showcontact',array('contact' => $contacts));
+    }
     public function logScreen(){
         return view('admin.loginscreen');
     }

@@ -32,7 +32,7 @@
                             <a class="btn btn-secondary" target="_blank" href="{{ url('/') }}"><i class="fas fa-eye mr-2"></i> Siteyi Gör</a>
                         </li>
                         <li >
-                            <a class="btn btn-danger"  ><i class="fas fa-sign-out-alt mr-2"></i>Çıkış</a>
+                            <a href="{{route('adminOut')}}" class="btn btn-danger" ><i class="fas fa-sign-out-alt mr-2"></i>Çıkış</a>
                         </li>
                     </ul>
                 </div>
