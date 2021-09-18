@@ -1,0 +1,50 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+body .header1{
+    background-color: #184b7e;
+}
+.header1 .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.2% 0;
+}
+.header1 i {
+    color: white;
+    margin: 0 0.3%;
+}
+.navbar{
+    background-image: url('../images/gplay.png');
+    background-size: 200px;
+    box-shadow: 0 5px 25px #584f4f;
+    padding-bottom: 0px !important;
+}
+.navbar #logo{
+    width: 100%;
+    margin: 1% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar #logo img{
+    width: 120px;
+}
+.navbar ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    margin-top: 1%;
+}
+.navbar ul li{
+    padding: .5rem 2%;
+    cursor:pointer;
+}
+.navbar ul li:hover{
+    background-color:#184b7e ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+}

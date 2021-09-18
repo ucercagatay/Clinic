@@ -9,92 +9,63 @@
     <title>Dashboard - SB Admin</title>
     <link href="{{asset('https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css')}}" rel="stylesheet" />
     <link href="{{asset('admin/adminpanel/css/styles.css')}}" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{asset('admin/adminpanel/css/admin.css') }}">
     <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js')}}" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+
 </head>
-<body class="sb-nav-fixed">
-<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-    <!-- Navbar Brand-->
-    <a class="navbar-brand ps-3" href="">Admin Panel</a>
-    <!-- Sidebar Toggle-->
-    <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-    <!-- Navbar Search-->
-    <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-        <div class="input-group">
-            <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-            <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-        </div>
-    </form>
-    <!-- Navbar-->
-    <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="">Ayarlar</a></li>
-                <li><a class="dropdown-item" href="">Bura bilinmiyor</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="{{route('adminOut')}}">Cikis Yap</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-<div id="layoutSidenav">
-    <div id="layoutSidenav_nav">
-        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-            <div class="sb-sidenav-menu">
-                <div class="nav">
-                    <div class="sb-sidenav-menu-heading">Sayfalar</div>
-                    <a class="nav-link" href="">
-                        <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                        Ana Ekran
-                    </a>
-                    <div class="sb-sidenav-menu-heading">Kontroller</div>
-                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                        FeedBackler
-                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                    </a>
-                    <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                        <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link" href="">FeedBack</a>
-                        </nav>
-                    </div>
-                    <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                         <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                         Pages
-                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                     </a>-->
-                    <div class="sb-sidenav-menu-heading">Düzenlemeler</div>
-                    <a class="nav-link" href="">
-                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                        Data Tabloları
-                    </a>
+<body class="font-sans antialiased">
+<div class="min-h-screen bg-gray-100 ">
+
+    <div class="min-h-screen bg-gray-100 body-white">
+        <!-- Page Heading -->
+            <header class="bg-white shadow">
+                <div id="head-buttons">
+                    <ul class="ul-flex">
+                        <li style="margin-right: 10px">
+                            <a class="btn btn-secondary" target="_blank" href="{{ url('/') }}"><i class="fas fa-eye mr-2"></i> Siteyi Gör</a>
+                        </li>
+                        <li >
+                            <a class="btn btn-danger"  ><i class="fas fa-sign-out-alt mr-2"></i>Çıkış</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="sb-sidenav-footer">
-                <div class="small">Giris Yapan Kullanıcı:</div>
-                Bura Databaseden çekilicek
-            </div>
-        </nav>
-    </div>
-</div>
-<footer class="py-4 bg-light mt-auto">
-    <div class="container-fluid px-4">
-        <div class="d-flex align-items-center justify-content-between small">
-            <div class="text-muted">Copyright &copy; Your Website 2021</div>
-            <div>
-                <a href="#">Privacy Policy</a>
-                &middot;
-                <a href="#">Terms &amp; Conditions</a>
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                        Bulunduğu alan
+                    </h2>
+                </div>
+            </header>
+    <!-- Page Content -->
+        <div class="py-6">
+            <div class="max-w-7xl mx-auto">
+                Bulunduğu alan
             </div>
         </div>
     </div>
-</footer>
-<script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js')}}" crossorigin="anonymous"></script>
-<script src="{{asset('admin/adminpanel/js/scripts.js')}}"></script>
-<script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js')}}" crossorigin="anonymous"></script>
-<script src="{{asset('admin/adminpanel/assets/demo/chart-area-demo.js')}}"></script>
-<script src="{{asset('admin/adminpanel/assets/demo/chart-bar-demo.js')}}"></script>
-<script src="{{asset('https://cdn.jsdelivr.net/npm/simple-datatables@latest')}}" crossorigin="anonymous"></script>
-<script src="{{asset(('admin/adminpanel/js/datatables-simple-demo.js'))}}"></script>
+
+    @stack('modals')
+    @isset($js)
+        {{ $js }}
+    @endif
+    @livewireScripts
+</div>
+<div id="sidebar">
+    <ul class="sidebar-head">
+        <a><li><img id="logo-img"  src="{{ asset('admin/adminpanel/admin-images/logo.png') }}"><h2>Dijital Fırat</h2> </li></a>
+    </ul>
+    <ul>
+        <a href="/admin"><li><i class="fas fa-home fa-2x"></i> <a href="/admin">Ana sayfa</a>  </li></a>
+        <a href="/admin/icons"><li><i class="fas fa-atom fa-2x"></i> <a href="/admin/icons">Alan 1</a> </li></a>
+        <a href="/admin/roles"><li><i class="fas fa-user-tag fa-2x"></i> <a href="/admin/roles">Alan 2</a>  </li></a>
+        <a href="/admin/users"><li><i class="fas fa-user fa-2x"></i> <a href="/admin/users">Alan 3</a> </li></a>
+    </ul>
+</div>
 </body>
 </html>
