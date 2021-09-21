@@ -10,16 +10,16 @@ class admin extends Controller
 {
     public function loginPass(Request $request){
         if(Auth::attempt(['email'=>$request->email,'password'=>$request->password])){
-            return redirect()->route('panel');
+            return redirect()->route('admin.panel');
         }
-        return redirect()->route('adminpanel')->withErrors('Giriş bilgileriniz yanlıştır');
+        return redirect()->route('admin.login')->withErrors('Giriş bilgileriniz yanlıştır');
     }
     public function adminOut(Request $request){
         Auth::logout();
-        return redirect()->route('loginscreen');
+        return redirect()->route('admin.login');
     }
     public function showFeedback(){
-        $contacts =DB::table('contact')->find(2);
+        $contacts =DB::table('contact')->find('4');
         return view('admin.showcontact',array('contact' => $contacts));
     }
     public function logScreen(){

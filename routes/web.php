@@ -16,10 +16,16 @@ use App\Http\Controllers;
 Route::get('/', function () {
     return view('welcome');
 })->name('mainpage');
-Route::get('/es1609',[Controllers\admin::class,'logScreen'])->middleware('isOut')->name('loginscreen');
-Route::post('/es1609',[Controllers\admin::class,'loginPass'])->name('adminpanel');
-Route::get('/es1609/panel',[Controllers\admin::class,'panel'])->middleware('isLogin')->name('panel');
-Route::get('/adminout',[Controllers\admin::class,'adminOut'])->name('adminOut');
+//Admin giriş işlemleri ve çıkış yapılıp yapılmadığının kontrol işlemi
+Route::prefix('/es1609')->name('admin.')->group(function () {
+    Route::get('/giris',[Controllers\admin::class,'logScreen'])->middleware('isOut')->name('login');
+    Route::post('/giris',[Controllers\admin::class,'loginPass'])->name('login.post');
+});
+//Giriş doğru olduğu durumda panel içindeki route işlemleri
+Route::prefix('/es1609')->middleware('isLogin')->name('admin.')->group(function () {
+    Route::get('/panel',[Controllers\admin::class,'panel'])->name('panel');
+    Route::get('/adminout',[Controllers\admin::class,'adminOut'])->name('adminOut');
+    Route::get('/panel/messages',[Controllers\admin::class,'showFeedback']);
+});
 Route::get('/contact',[Controllers\feedback::class,'feedback'])->name('feedback');
 Route::post('/contact',[Controllers\feedback::class,'message'])->name('contact');
-Route::get('/es1609/panel/messages',[Controllers\admin::class,'showFeedback']);

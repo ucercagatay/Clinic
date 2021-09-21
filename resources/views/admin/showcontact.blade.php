@@ -25,27 +25,50 @@
 
     <div class="min-h-screen bg-gray-100 body-white">
         <!-- Page Heading -->
-            <header class="bg-white shadow">
-                <div id="head-buttons">
-                    <ul class="ul-flex">
-                        <li style="margin-right: 10px">
-                            <a class="btn btn-secondary" target="_blank" href="{{ url('/') }}"><i class="fas fa-eye mr-2"></i> Siteyi Gör</a>
-                        </li>
-                        <li >
-                            <a href="{{route('admin.adminOut')}}" class="btn btn-danger" ><i class="fas fa-sign-out-alt mr-2"></i>Çıkış</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                        Bulunduğu alan
-                    </h2>
-                </div>
-            </header>
-    <!-- Page Content -->
+        <header class="bg-white shadow">
+            <div id="head-buttons">
+                <ul class="ul-flex">
+                    <li style="margin-right: 10px">
+                        <a class="btn btn-secondary" target="_blank" href="{{ url('/') }}"><i class="fas fa-eye mr-2"></i> Siteyi Gör</a>
+                    </li>
+                    <li >
+                        <a href="{{route('admin.adminOut')}}" class="btn btn-danger" ><i class="fas fa-sign-out-alt mr-2"></i>Çıkış</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                    Bulunduğu alan
+                </h2>
+            </div>
+        </header>
+        <!-- Page Content -->
         <div class="py-6">
             <div class="max-w-7xl mx-auto">
-               Bura dolucak
+                <thead>
+                <tr>
+                    <th>İsim</th>
+                    <th>Soyisim</th>
+                    <th>Email</th>
+                    <th>Telefon Numarası</th>
+                    <th>Bilgi Türü</th>
+                    <th>Mesaj</th>
+                    <th>Gönderim Tarihi</th>
+                </tr>
+                </thead>
+                <br>
+                <tbody>
+                <tr>
+                    <td>{{$contact->name}}</td>
+                    <td>{{$contact->surname}}</td>
+                    <td>{{$contact->email}}</td>
+                    <td>{{$contact->phoneNumber}}</td>
+                    <td>{{$contact->option}}</td>
+                    <td>{{$contact->message}}</td>
+                    <td>{{$contact->created_at}}</td>
+                </tr>
+                </tbody>
+
             </div>
         </div>
     </div>

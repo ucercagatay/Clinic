@@ -32,7 +32,7 @@
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
-            <form  method="post" action="{{route('adminpanel')}}"class="login100-form validate-form">
+            <form  method="post" action="{{route('admin.login.post')}}"class="login100-form validate-form">
                 @csrf
 					<span class="login100-form-title p-b-43">
 						Login to continue
