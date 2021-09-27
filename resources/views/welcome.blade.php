@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-                <a href="https://www.youtube.com/watch?v=GlrxcuEDyF8" class="glightbox play-btn"></a>
+                <a href="https://www.youtube.com/watch?v=h435WGg_hDc" class="glightbox play-btn"></a>
             </div>
 
         </div>
