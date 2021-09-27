@@ -25,7 +25,7 @@ Route::prefix('/es1609')->name('admin.')->group(function () {
 Route::prefix('/es1609')->middleware('isLogin')->name('admin.')->group(function () {
     Route::get('/panel',[Controllers\admin::class,'panel'])->name('panel');
     Route::get('/adminout',[Controllers\admin::class,'adminOut'])->name('adminOut');
-    Route::get('/panel/messages',[Controllers\admin::class,'showFeedback']);
+    Route::get('/panel/messages',[Controllers\admin::class,'showFeedback'])->name('messages');
 });
 Route::get('/contact',[Controllers\feedback::class,'feedback'])->name('feedback');
 Route::post('/contact',[Controllers\feedback::class,'message'])->name('contact');

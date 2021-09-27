@@ -45,33 +45,35 @@
         <!-- Page Content -->
         <div class="py-6">
             <div class="max-w-7xl mx-auto">
-                <thead>
-                <tr>
-                    <th>İsim</th>
-                    <th>Soyisim</th>
-                    <th>Email</th>
-                    <th>Telefon Numarası</th>
-                    <th>Bilgi Türü</th>
-                    <th>Mesaj</th>
-                    <th>Gönderim Tarihi</th>
-                </tr>
-                </thead>
-                <br>
-                <tbody>
-                    @foreach($contacts as $contact){
-                    <tr>
-                        <td>{{$contact->name}}</td>
-                        <td>{{$contact->surname}}</td>
-                        <td>{{$contact->email}}</td>
-                        <td>{{$contact->phoneNumber}}</td>
-                        <td>{{$contact->option}}</td>
-                        <td>{{$contact->message}}</td>
-                        <td>{{$contact->created_at}}</td>
-                    </tr>
-                    }
-                        <br>
-                    @endforeach
-                </tbody>
+               <table class="table table-striped table-bordered">
+                   <thead>
+                   <tr>
+                       <th>İsim</th>
+                       <th>Soyisim</th>
+                       <th>Email</th>
+                       <th>Telefon Numarası</th>
+                       <th>Bilgi Türü</th>
+                       <th>Mesaj</th>
+                       <th>Gönderim Tarihi</th>
+                   </tr>
+                   </thead>
+                   <br>
+                   <tbody>
+                   @foreach($contacts as $contact)
+                   <tr>
+                       <td>{{$contact->name}}</td>
+                       <td>{{$contact->surname}}</td>
+                       <td>{{$contact->email}}</td>
+                       <td>{{$contact->phoneNumber}}</td>
+                       <td>{{$contact->option}}</td>
+                       <td>{{$contact->message}}</td>
+                       <td>{{$contact->created_at}}</td>
+                   </tr>
+
+                   <br>
+                   @endforeach
+                   </tbody>
+               </table>
 
             </div>
         </div>
