@@ -29,3 +29,11 @@ Route::prefix('/es1609')->middleware('isLogin')->name('admin.')->group(function 
 });
 Route::get('/contact',[Controllers\feedback::class,'feedback'])->name('feedback');
 Route::post('/contact',[Controllers\feedback::class,'message'])->name('contact');
+//Sayfalama işlemleri
+Route::prefix('/pages')->name('page.')->group(function(){
+
+    Route::get('/sacekimi',[Controllers\pages::class,'hairpages'])->name('hairpage');
+});
+
+//Denemek amaçlı kullanılan routelar
+Route::get('/denemepage',[Controllers\test::class,'pagetest'])->name('pagetest');

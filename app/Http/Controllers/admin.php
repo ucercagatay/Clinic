@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -19,8 +20,9 @@ class admin extends Controller
         return redirect()->route('admin.login');
     }
     public function showFeedback(){
-        $contacts =DB::table('contact')->find('4');
-        return view('admin.showcontact',array('contact' => $contacts));
+        $contacts =Contact::all();
+        return view('admin.showcontact',compact('contacts'));
+
     }
     public function logScreen(){
         return view('admin.loginscreen');

@@ -11,7 +11,7 @@ class feedback extends Controller
         return view('iletisim');
     }
     public function message(Request $request){
-        DB::table('contact')->insert([
+        DB::table('contacts')->insert([
             'name'=>$request->input('name'),
             'surname'=>$request->input('surname'),
             'email'=>$request->input('email'),

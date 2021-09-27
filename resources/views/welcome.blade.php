@@ -226,7 +226,7 @@
                             <p>
                                 Saç ekimi tedavisi, saçları dökülmüş, seyrelmiş, yanmış, doğuştan saçın bir bölümünde kök bulunmayan v.b. sıkıntılar yaşayan kişilerde, bu bölgelerde yeniden saç çıkışını sağlamak için yapılan cerrahi bir uygulamadır.
                             </p>
-                            <a href="#" class="book-a-table-btn">Daha Fazla <i class="fal fa-long-arrow-right"></i></a>
+                            <a href="{{route('page.hairpage')}}" class="book-a-table-btn">Daha Fazla <i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div><!-- End testimonial item -->

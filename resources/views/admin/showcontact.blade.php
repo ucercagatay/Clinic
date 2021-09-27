@@ -58,15 +58,19 @@
                 </thead>
                 <br>
                 <tbody>
-                <tr>
-                    <td>{{$contact->name}}</td>
-                    <td>{{$contact->surname}}</td>
-                    <td>{{$contact->email}}</td>
-                    <td>{{$contact->phoneNumber}}</td>
-                    <td>{{$contact->option}}</td>
-                    <td>{{$contact->message}}</td>
-                    <td>{{$contact->created_at}}</td>
-                </tr>
+                    @foreach($contacts as $contact){
+                    <tr>
+                        <td>{{$contact->name}}</td>
+                        <td>{{$contact->surname}}</td>
+                        <td>{{$contact->email}}</td>
+                        <td>{{$contact->phoneNumber}}</td>
+                        <td>{{$contact->option}}</td>
+                        <td>{{$contact->message}}</td>
+                        <td>{{$contact->created_at}}</td>
+                    </tr>
+                    }
+                        <br>
+                    @endforeach
                 </tbody>
 
             </div>
