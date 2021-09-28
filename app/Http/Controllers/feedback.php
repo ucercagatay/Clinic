@@ -11,6 +11,16 @@ class feedback extends Controller
         return view('iletisim');
     }
     public function message(Request $request){
+
+        $validated=$request->validate([
+            'name' =>'required|min:3|max:30',
+            'surname'=>'required|min:3|max:24',
+            'email'=>'required|email',
+            'phoneNumber'=>'required|numeric',
+            'option'=>'required',
+            'message'=>'min:3|max:240',
+        ]);
+
         DB::table('contacts')->insert([
             'name'=>$request->input('name'),
             'surname'=>$request->input('surname'),

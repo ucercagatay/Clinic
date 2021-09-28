@@ -48,6 +48,7 @@
                <table class="table table-striped table-bordered">
                    <thead>
                    <tr>
+                       <th>İd</th>
                        <th>İsim</th>
                        <th>Soyisim</th>
                        <th>Email</th>
@@ -55,12 +56,14 @@
                        <th>Bilgi Türü</th>
                        <th>Mesaj</th>
                        <th>Gönderim Tarihi</th>
+                       <th>Eylemler</th>
                    </tr>
                    </thead>
                    <br>
                    <tbody>
                    @foreach($contacts as $contact)
                    <tr>
+                       <td>{{$contact->id}}</td>
                        <td>{{$contact->name}}</td>
                        <td>{{$contact->surname}}</td>
                        <td>{{$contact->email}}</td>
@@ -68,6 +71,14 @@
                        <td>{{$contact->option}}</td>
                        <td>{{$contact->message}}</td>
                        <td>{{$contact->created_at}}</td>
+                        <td>
+                            <form method="post" action="{{route('admin.messages.post')}}" >
+                                <!-- here the '1' is the id of the post which you want to delete -->
+                                @csrf
+                                {{ method_field('DELETE') }}
+
+                                <button type="submit">Sil</button>
+                            </form></td>
                    </tr>
 
                    <br>
@@ -90,7 +101,7 @@
         <a><li><img id="logo-img"  src="{{ asset('admin/adminpanel/admin-images/logo.png') }}"><h2>Dijital Fırat</h2> </li></a>
     </ul>
     <ul>
-        <a href="/admin"><li><i class="fas fa-home fa-2x"></i> <a href="/admin">Ana sayfa</a>  </li></a>
+        <a href="{{route('admin.panel')}}"><li><i class="fas fa-home fa-2x"></i> <a href="{{route('admin.panel')}}">Ana sayfa</a>  </li></a>
         <a href="/admin/icons"><li><i class="fas fa-atom fa-2x"></i> <a href="/admin/icons">Alan 1</a> </li></a>
         <a href="/admin/roles"><li><i class="fas fa-user-tag fa-2x"></i> <a href="/admin/roles">Alan 2</a>  </li></a>
         <a href="/admin/users"><li><i class="fas fa-user fa-2x"></i> <a href="/admin/users">Alan 3</a> </li></a>
