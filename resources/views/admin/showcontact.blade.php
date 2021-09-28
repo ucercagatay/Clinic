@@ -75,8 +75,7 @@
                             <form method="post" action="{{route('admin.messages.post')}}" >
                                 <!-- here the '1' is the id of the post which you want to delete -->
                                 @csrf
-                                {{ method_field('DELETE') }}
-
+                                <input type="hidden" name="delete" value="{{$contact->id}}">
                                 <button type="submit">Sil</button>
                             </form></td>
                    </tr>
@@ -98,7 +97,7 @@
 </div>
 <div id="sidebar">
     <ul class="sidebar-head">
-        <a><li><img id="logo-img"  src="{{ asset('admin/adminpanel/admin-images/logo.png') }}"><h2>Dijital Fırat</h2> </li></a>
+        <a><li><img id="logo-img"  src="{{ asset('admin/adminpanel/admin-images/logo.png') }}"><h2>Erkan Sanli</h2> </li></a>
     </ul>
     <ul>
         <a href="{{route('admin.panel')}}"><li><i class="fas fa-home fa-2x"></i> <a href="{{route('admin.panel')}}">Ana sayfa</a>  </li></a>

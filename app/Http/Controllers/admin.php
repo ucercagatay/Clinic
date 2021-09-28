@@ -24,8 +24,8 @@ class admin extends Controller
         return view('admin.showcontact',compact('contacts'));
 
     }
-    public function destroy($id){
-        Contact::where('id',$id)->delete();
+    public function destroy(Request $request){
+       Contact::where('id',$request->delete)->delete();
         return redirect()->route('admin.messages');
     }
     public function logScreen(){
