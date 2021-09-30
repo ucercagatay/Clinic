@@ -28,15 +28,15 @@ Route::prefix('/es1609')->middleware('isLogin')->name('admin.')->group(function 
 //Sayfalar
 //Anasayfa işlemleri
 //Anasayfa abonepost
-Route::prefix('/')->name('mainpage.')->group(function(){
+Route::prefix('/')->name('mainpage.')->middleware('WordFilter')->group(function(){
     Route::get('/', function () {return view('welcome');})->name('anasayfa');
     Route::post('/' , [Controllers\subscribers::class,'subscribe'])->name('anasayfa.post');
 });
 //Anasayfa mesajpost
-Route::prefix('/')->name('anasayfa.')->group(function(){
+/*Route::prefix('/')->name('anasayfa.')->group(function(){
     Route::get('/',function(){return view('welcome');})->name('erkansanli');
     Route::post('/',[Controllers\feedback::class,'message'])->name('erkansanli.post');
-});
+});*/
 //Sayfalama işlemleri
 Route::prefix('/pages')->name('page.')->group(function(){
     Route::get('/sacekimi',[Controllers\pages::class,'hairpages'])->name('hairpage');

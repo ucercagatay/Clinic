@@ -402,7 +402,7 @@
 
 
                 @endforeach
-                <form  method="post"   action="{{route('anasayfa.erkansanli.post')}}" role="form" class="php-email-form">
+                <form  method="post"   action="" role="form" class="php-email-form">
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <input type="text" name="name" class="form-control" id="name" placeholder="İsim" required>
