@@ -130,7 +130,7 @@ h3{
     font-size: 0.85vw;
     display: flex;
     justify-content: center;
-    background-color: #bf2533;
+    background-color: #138cb7;
     color: white;
     position: absolute;
     bottom: 0;
@@ -145,7 +145,7 @@ h3{
     margin-top: 10px;
 }
 .card-red .card-header{
-    background-color: #bf2533;
+    background-color: #138cb7;
     border-radius: 0px !important;
 }
 .tables{
