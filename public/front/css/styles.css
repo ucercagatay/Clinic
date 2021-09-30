@@ -1173,6 +1173,31 @@ section {
     bottom: 0;
 }
 /*--------------------------------------------------------------
+# Numbers
+--------------------------------------------------------------*/
+#numbers{
+    padding: 35px 0;
+    background-color: #138CB7;
+}
+#numbers .numbers-inner{
+    display: flex;
+}
+#numbers .numbers-inner div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#numbers .numbers-inner div i{
+    margin-bottom: 2%;
+}
+#numbers .numbers-inner div h4{
+    margin-bottom: 1%;
+}
+#numbers .numbers-inner div h3{
+    margin-bottom: 1%;
+}
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact{

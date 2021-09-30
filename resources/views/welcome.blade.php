@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Vendor CSS Files -->
     <link rel="stylesheet" href="{{asset('front/vendor/animate.css/animate.min.css') }}">
     <link rel="stylesheet" href="{{asset('front/vendor/aos/aos.css') }}">
@@ -348,6 +350,32 @@
 
     </div>
 </section><!-- End Doctors Section -->
+<section id="numbers">
+    <div class="container">
+        <div class="numbers-inner">
+            <div class="col-3" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-globe-americas fa-4x"></i>
+                <h4>Dünyada Biz</h4>
+                <h3>7</h3>
+            </div>
+            <div class="col-3" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-user-md fa-4x"></i>
+                <h4>Doktor Sayısı</h4>
+                <h3>7</h3>
+            </div>
+            <div class="col-3" data-aos="zoom-in" data-aos-delay="300">
+                <i class="far fa-stethoscope fa-4x"></i>
+                <h4>Operasyon Sayısı</h4>
+                <h3>7</h3>
+            </div>
+            <div class="col-3" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fas fa-business-time fa-4x"></i>
+                <h4>Deneyim</h4>
+                <h3>7</h3>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
@@ -524,4 +552,7 @@
 <script src="{{ asset('front/vendor/php-email-form/validate.js') }}"></script>
 <script src="{{ asset('front/vendor/swiper/swiper-bundle.min.js') }}"></script>
 <script src="{{ asset('front/Script/script.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+</script>
 </html>
