@@ -47,7 +47,7 @@
                 <div class="col-lg-4 col-md-6 footer-newsletter">
                     <h4>Bültenimiz</h4>
                     <p>Yeni haberlerden ve kampanyalardan haberdar olmak için bültenimize abone olabilirsiniz.</p>
-                    <form  method="post" action="{{route('mainpage.post')}}">
+                    <form  method="post" action="{{route('mainpage.anasayfa.post')}}">
                         @csrf
                         <input type="email" name="email">
                         <input type="submit" value="Abone Ol">

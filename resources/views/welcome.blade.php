@@ -424,26 +424,31 @@
             </div>
 
             <div class="col-lg-8 mt-5 mt-lg-0">
+                @foreach($errors->all() as $error)
 
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <li>{{$error}}</li>
+
+
+                @endforeach
+                <form  method="post"   action="{{route('anasayfa.erkansanli.post')}}" role="form" class="php-email-form">
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <input type="text" name="name" class="form-control" id="name" placeholder="İsim" required>
                         </div>
                         <div class="col-md-6 form-group mt-3 mt-md-0">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Soyisim" required>
+                            <input type="text" name="surname" class="form-control" id="surname" placeholder="Soyisim" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 form-group">
-                            <input type="tel" class="form-control" name="email" id="email" placeholder="Telefon" required>
+                            <input type="tel" class="form-control" name="phoneNumber" id="email" placeholder="Telefon" required>
                         </div>
                         <div class="col-md-6 form-group mt-3 mt-md-0">
                             <input type="email" class="form-control" name="email" id="email" placeholder="E-mail adresiniz" required>
                         </div>
                     </div>
                     <div class="form-group mt-3">
-                        <select class="form-select" aria-label="Default select example">
+                        <select name="option" class="form-select" aria-label="Default select example">
                             <option selected>Lütfen Seçiniz</option>
                             <option value="1">Saç Ekimi Ve Tedavileri</option>
                             <option value="2">Burun Estetiği</option>
@@ -516,7 +521,15 @@
                 <div class="col-lg-4 col-md-6 footer-newsletter">
                     <h4>Bültenimiz</h4>
                     <p>Yeni haberlerden ve kampanyalardan haberdar olmak için bültenimize abone olabilirsiniz.</p>
-                    <form  method="post" action="{{route('mainpage.post')}}">
+                    <!--YUSUF ERROR DİVİ BURDA-->
+                    @foreach($errors->all() as $error)
+
+                        <li>{{$error}}</li>
+
+
+                    @endforeach
+                    <!---->
+                    <form  method="post" action="{{route('mainpage.anasayfa.post')}}">
                         @csrf
                         <input type="email" name="email">
                         <input type="submit" value="Abone Ol">

@@ -25,12 +25,18 @@ Route::prefix('/es1609')->middleware('isLogin')->name('admin.')->group(function 
     Route::post('/panel/messages',[Controllers\admin::class,'destroy'])->name('messages.post');
     Route::get('/panel/subscribers',[Controllers\subscribers::class,'showSubscriber'])->name('subscribers');
 });
-Route::get('/contact',[Controllers\feedback::class,'feedback'])->name('feedback');
-Route::post('/contact',[Controllers\feedback::class,'message'])->name('contact');
 //Sayfalar
 //Anasayfa işlemleri
-Route::get('/', function () {return view('welcome');})->name('mainpage');
-Route::post('/' , [Controllers\subscribers::class,'subscribe'])->name('mainpage.post');
+//Anasayfa abonepost
+Route::prefix('/')->name('mainpage.')->group(function(){
+    Route::get('/', function () {return view('welcome');})->name('anasayfa');
+    Route::post('/' , [Controllers\subscribers::class,'subscribe'])->name('anasayfa.post');
+});
+//Anasayfa mesajpost
+Route::prefix('/')->name('anasayfa.')->group(function(){
+    Route::get('/',function(){return view('welcome');})->name('erkansanli');
+    Route::post('/',[Controllers\feedback::class,'message'])->name('erkansanli.post');
+});
 //Sayfalama işlemleri
 Route::prefix('/pages')->name('page.')->group(function(){
     Route::get('/sacekimi',[Controllers\pages::class,'hairpages'])->name('hairpage');
