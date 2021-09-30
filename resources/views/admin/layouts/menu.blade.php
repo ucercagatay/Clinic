@@ -1,24 +1,15 @@
-<body class="font-sans antialiased">
-<div class="min-h-screen bg-gray-100 ">
-
-    <div class="min-h-screen bg-gray-100 body-white">
-        <!-- Page Heading -->
-        <header class="bg-white shadow">
-            <div id="head-buttons">
-                <ul class="ul-flex">
-                    <li style="margin-right: 10px">
-                        <a class="btn btn-secondary" target="_blank" href="{{ url('/') }}"><i class="fas fa-eye mr-2"></i> Siteyi Gör</a>
-                    </li>
-                    <li >
-                        <a href="{{route('admin.adminOut')}}" class="btn btn-danger" ><i class="fas fa-sign-out-alt mr-2"></i>Çıkış</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                    Bulunduğu alan
-                </h2>
-            </div>
-        </header>
-    </div>
 </div>
+</div>
+<div id="sidebar">
+    <ul class="sidebar-head">
+        <a><li><img id="logo-img"  src="{{ asset('admin/adminpanel/admin-images/logo.png') }}"><h2>Erkan Sanli Hair Clinic</h2> </li></a>
+    </ul>
+    <ul>
+        <a href="{{route('admin.panel')}}"><li><i class="fas fa-home fa-2x"></i> <a href="{{route('admin.panel')}}">Ana sayfa</a>  </li></a>
+        <a href="{{route('admin.messages')}}"><li><i class="fas fa-atom fa-2x"></i> <a href="{{route('admin.messages')}}">İletişim Formları</a> </li></a>
+        <a href="{{route('admin.subscribers')}}"><li><i class="fas fa-user-tag fa-2x"></i> <a href="{{route('admin.subscribers')}}"> Aboneleri Görüntüle</a>  </li></a>
+        <a href="/admin/users"><li><i class="fas fa-user fa-2x"></i> <a href="/admin/users">Alan 3</a> </li></a>
+    </ul>
+</div>
+
+</body>

@@ -62,7 +62,14 @@
             <ul>
                 <li><a class="nav-link scrollto active" href="#hero">Ana Sayfa</a></li>
                 <li><a class="nav-link scrollto" href="#about">Hakkımızda</a></li>
-                <li><a class="nav-link scrollto" href="#events">Saç Ekimi ve Tedavileri</a></li>
+                <li class="dropdown"><a class="nav-link scrollto" href="#events">Saç Tedavileri</a>
+                    <ul>
+                        <i class="fas fa-triangle"></i>
+                        <li><a href="">Saç Lazeri</a></li>
+                        <li><a href="">..Tedavi</a></li>
+                        <li><a href="">..Tedavi</a></li>
+                        <li><a href="">..Tedavi</a></li>
+                    </ul></li>
                 <li class="dropdown"><a href="#"><span>Saç Ekimi</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <i class="fas fa-triangle"></i>
@@ -72,10 +79,14 @@
                         <li><a href="">Tıraşsız Saç Ekimi</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="#">Sakal – Bıyık Ekimi</a></li>
-                <li><a class="nav-link scrollto" href="#">Kaş Ekimi</a></li>
-                <li><a class="nav-link scrollto" href="#">Saç Tedavileri</a></li>
-                <li><a class="nav-link scrollto" href="#">Saç Lazeri</a></li>
+                <li class="dropdown"><a class="nav-link scrollto" href="#">Kaş-Sakal Ekimi</a>
+                    <ul>
+                        <i class="fas fa-triangle"></i>
+                        <li><a href="">Kaş EKimi</a></li>
+                        <li><a href="">Sakal-Bıyık Ekimi</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link scrollto" href="#">Burun-Göz Estetiği</a></li>
             </ul>
             <i class="fas fa-bars mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -346,9 +357,6 @@
             <p>Bizimle İletişime Geçin</p>
         </div>
     </div>
-    <div data-aos="fade-up">
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-    </div>
 
     <div class="container" data-aos="fade-up">
 
@@ -392,14 +400,27 @@
                 <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                     <div class="row">
                         <div class="col-md-6 form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Adınız" required>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="İsim" required>
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Soyisim" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="tel" class="form-control" name="email" id="email" placeholder="Telefon" required>
                         </div>
                         <div class="col-md-6 form-group mt-3 mt-md-0">
                             <input type="email" class="form-control" name="email" id="email" placeholder="E-mail adresiniz" required>
                         </div>
                     </div>
                     <div class="form-group mt-3">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Başlık" required>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Lütfen Seçiniz</option>
+                            <option value="1">Saç Ekimi Ve Tedavileri</option>
+                            <option value="2">Burun Estetiği</option>
+                            <option value="3">Sakal Bıyık Ekimi</option>
+                        </select>
                     </div>
                     <div class="form-group mt-3">
                         <textarea class="form-control" name="message" rows="8" placeholder="Mesaj" required></textarea>
