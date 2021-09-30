@@ -20,6 +20,10 @@ class feedback extends Controller
             'option'=>'required',
             'message'=>'min:3|max:240',
         ]);
+        if($validated==1){
+            return back()->withErrors();
+        }
+        else {
 
         DB::table('contacts')->insert([
             'name'=>$request->input('name'),
@@ -31,7 +35,8 @@ class feedback extends Controller
             'created_at'=>now(),
             'updated_at'=>now(),
         ]);
-        return redirect()->route('mainpage');
+        return back();
+        }
     }
 
 }
