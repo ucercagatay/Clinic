@@ -14,7 +14,6 @@ class Subscribers extends Controller
             'created_at'=>now(),
             'updated_at'=>now(),
         ]);
-        return back();
     }
     public function showSubscriber(){
         $subscribers=Subscriber::all();
