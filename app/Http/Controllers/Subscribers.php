@@ -9,12 +9,20 @@ use Illuminate\Support\Facades\DB;
 class Subscribers extends Controller
 {
     public function subscribe(Request $request){
-        DB::table('subscribers')->insert([
-            'email'=>$request->input('email'),
-            'created_at'=>now(),
-            'updated_at'=>now(),
+        $validation=$request->validate([
+        'email' =>'required|email|unique:subscribers,email'
         ]);
-        return back();
+            if($validation==1){
+                return back()->withErrors('Bir mail sadece bir kere abone olabilir');
+            }
+            else {
+                DB::table('subscribers')->insert([
+                    'email'=>$request->input('email'),
+                    'created_at'=>now(),
+                    'updated_at'=>now(),
+                ]);
+                return back();
+            }
     }
     public function showSubscriber(){
         $subscribers=Subscriber::all();

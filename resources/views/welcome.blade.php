@@ -488,6 +488,14 @@
                 <div class="col-lg-4 col-md-6 footer-newsletter">
                     <h4>Bültenimiz</h4>
                     <p>Yeni haberlerden ve kampanyalardan haberdar olmak için bültenimize abone olabilirsiniz.</p>
+                    <!--YUSUF ERROR DİVİ BURDA-->
+                    @foreach($errors->all() as $error)
+
+                        <li>{{$error}}</li>
+
+
+                    @endforeach
+                    <!---->
                     <form  method="post" action="{{route('mainpage.post')}}">
                         @csrf
                         <input type="email" name="email">
