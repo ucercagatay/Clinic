@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cadd819a6415b190ae2704ced6e6c8b",
+    "content-hash": "ad725dc4195c06a60f4850c50b1466c9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -121,6 +121,44 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
+        },
+        {
+            "name": "dawnstar/curse",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alprnkeskekoglu/curse.git",
+                "reference": "638765c49b94391829d2df1f28ede21bb495396d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alprnkeskekoglu/curse/zipball/638765c49b94391829d2df1f28ede21bb495396d",
+                "reference": "638765c49b94391829d2df1f28ede21bb495396d",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Curse\\Providers\\CurseServiceProvider"
+                    ],
+                    "aliases": {
+                        "Curse": "Curse\\Facades\\CurseFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Curse\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Laravel projeler için küfür filtresi",
+            "support": {
+                "issues": "https://github.com/alprnkeskekoglu/curse/issues",
+                "source": "https://github.com/alprnkeskekoglu/curse/tree/1.4"
+            },
+            "time": "2020-04-21T14:39:38+00:00"
         },
         {
             "name": "doctrine/inflector",
