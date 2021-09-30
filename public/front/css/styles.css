@@ -153,14 +153,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .languages ul li + li {
-    padding-left: 10px;
+    padding-left: 18px;
 }
 
 #topbar .languages ul li + li::before {
     display: inline-block;
     padding-right: 10px;
     color: rgba(255, 255, 255, 0.5);
-    content: "/";
+    content: " ";
     font-size: 22px;
 }
 
@@ -237,6 +237,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
     padding: 0;
+    width: 78%;
 }
 
 .navbar ul {
@@ -249,6 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar li {
     position: relative;
+    margin-left: 4%;
 }
 
 .navbar a {
@@ -491,7 +493,7 @@ section {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url(../images/slider1.png) top center;
+    background: url(../images/slidee.jpg) top center;
     background-size: cover;
     position: relative;
     padding: 0;
@@ -696,7 +698,7 @@ section {
 .breadcrumbs {
     padding: 15px 0;
     background: #138cb7;
-    margin-top: 121px;
+
 }
 
 @media (max-width: 992px) {
@@ -903,7 +905,7 @@ section {
     left: 0%;
     height: 260px;
     width: 6%;
-    background: linear-gradient(270deg ,#00000000,#138cb7);
+    background: linear-gradient(270deg,#00000000,#1d1d1d);
     border: 0;
     margin-top: -300px;
 }
@@ -915,7 +917,7 @@ section {
     right: 0%;
     height: 260px;
     width: 6%;
-    background: linear-gradient(90deg ,#00000000,#138cb7);
+    background: linear-gradient(90deg,#00000000,#1d1d1d);
     border: 0;
     margin-top: -300px;
 }
@@ -1149,7 +1151,7 @@ section {
 }
 .inner-page img{
     width: 400px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
     float: left;
 }
@@ -1219,7 +1221,11 @@ section {
     margin-bottom: 5px;
     font-family: "Poppins", sans-serif;
 }
-
+.contact .form-select{
+    background-color: #0c0b09;
+    border-color: #39545c;
+    color: #a49b89;
+}
 .contact .info p {
     padding: 0 0 0 60px;
     margin-bottom: 0;
@@ -1500,4 +1506,117 @@ section {
     text-align: center;
     font-size: 13px;
     color: #fff;
+}
+
+
+
+/* İNNER-PAGE */
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#inner-topbar {
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    z-index: 996;
+    position: relative;
+    background: url(../images/slider4.jpg) top center no-repeat;
+    background-size: cover;
+}
+#inner-topbar::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+#inner-topbar .container{
+    position: relative;
+}
+#inner-topbar .contact-info i {
+    font-style: normal;
+    color: #138cb7;
+}
+
+#inner-topbar .contact-info i span {
+    padding-left: 5px;
+    color: #fff;
+}
+
+#inner-topbar .languages ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #138cb7;
+}
+
+#inner-topbar .languages ul a {
+    color: white;
+    font-size: 22px;
+}
+
+#inner-topbar .languages ul li + li {
+    padding-left: 18px;
+}
+
+#inner-topbar .languages ul li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    content: " ";
+    font-size: 22px;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#innerHeader {
+    background: rgb(255 255 255 / 80%);
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    position: relative;
+}
+#innerHeader.header-scrolled {
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #37332a;
+}
+#innerHeader .logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    width: 85px;
+}
+
+#innerHeader .logo a {
+    color: #fff;
+}
+
+#innerHeader .logo img {
+    max-height: 40px;
+}
+
+
+@media (max-width: 991px) {
+    #innerHeader div:first-child{
+        justify-content: space-between;
+    }
+    .mobile-nav-toggle {
+        display: block;
+        color: #138cb7;
+    }
+    .navbar ul {
+        display: none;
+    }
 }

@@ -37,7 +37,7 @@
                         <li><a href="">..Tedavi</a></li>
                         <li><a href="">..Tedavi</a></li>
                     </ul></li>
-                <li class="dropdown"><a href="#"><span>Saç Ekimi</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a href="#"><span>Saç Ekimi</span></a>
                     <ul>
                         <i class="fas fa-triangle"></i>
                         <li><a href="">Safir FUE Saç Ekimi</a></li>
