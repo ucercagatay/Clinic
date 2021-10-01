@@ -840,7 +840,9 @@ section {
 .about .content p:last-child {
     margin-bottom: 0;
 }
-
+.about .content .fst-italic {
+    font-size: 20px;
+}
 @media (min-width: 1024px) {
     .about {
         background-attachment: fixed;

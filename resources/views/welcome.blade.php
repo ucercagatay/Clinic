@@ -39,8 +39,8 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
 
         <div class="contact-info d-flex align-items-center">
-            <i class="fal fa-mobile d-flex align-items-center"><span>+1 5589 55488 55</span></i>
-            <i class="fal fa-envelope d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
+            <i class="fal fa-mobile d-flex align-items-center"><span>+90 (507) 335 95 70</span></i>
+            <i class="fal fa-envelope d-flex align-items-center ms-4"><span> erkansanlihairclinic@outlook.com</span></i>
         </div>
 
         <div class="languages d-none d-md-flex align-items-center">
@@ -68,9 +68,8 @@
                     <ul>
                         <i class="fas fa-triangle"></i>
                         <li><a href="">Saç Lazeri</a></li>
-                        <li><a href="">..Tedavi</a></li>
-                        <li><a href="">..Tedavi</a></li>
-                        <li><a href="">..Tedavi</a></li>
+                        <li><a href="">Mezoterapi</a></li>
+                        <li><a href="">PRP Tedavisi</a></li>
                     </ul></li>
                 <li class="dropdown"><a href="#"><span>Saç Ekimi</span></a>
                     <ul>
@@ -395,7 +394,7 @@
                     <div class="address">
                         <i class="fal fa-map-marker-alt"></i>
                         <h4>Konum:</h4>
-                        <p>A108 Adam Street, New York, NY 535022</p>
+                        <p>Cevizlik Mh. Ebuzziya Cd. No:63 Bakırköy Istanbul, Turkey</p>
                     </div>
 
                     <div class="open-hours">
@@ -410,13 +409,13 @@
                     <div class="email">
                         <i class="fal fa-envelope"></i>
                         <h4>Email:</h4>
-                        <p>Mail:</p>
+                        <p>erkansanlihairclinic@outlook.com</p>
                     </div>
 
                     <div class="phone">
                         <i class="fal fa-mobile"></i>
                         <h4>Telefon:</h4>
-                        <p>+1 5589 55488 55s</p>
+                        <p>+90 (507) 335 95 70</p>
                     </div>
 
                 </div>
@@ -486,10 +485,10 @@
                     <div class="footer-info">
                         <h3>Erkan Şanlı Hair Cilinic</h3>
                         <p>
-                            A108 Adam Street <br>
-                            NY 535022, USA<br><br>
-                            <strong>Telefon:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            Cevizlik Mh. Ebuzziya Cd. No:63 <br>
+                            Bakırköy Istanbul, Turkey<br><br>
+                            <strong>Telefon:</strong> +90 (507) 335 95 70<br>
+                            <strong>Email:</strong> erkansanlihairclinic@outlook.com<br>
                         </p>
                         <div class="social-links mt-3">
                             <a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a>
