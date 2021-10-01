@@ -8,13 +8,10 @@
             <i class="fal fa-envelope d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
         </div>
 
-        <div class="languages d-none d-md-flex align-items-center">
-            <ul>
-                <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-            </ul>
+        <div class="social-links d-none d-md-flex align-items-center">
+            <a href="https://www.facebook.com/erkansanlihairclinic/" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/erkansanlisacekimi/" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCzYU83_3Rp4aPO9f_0ZiCHw" class="google-plus"><i class="fab fa-youtube"></i></a>
         </div>
     </div>
 </div>

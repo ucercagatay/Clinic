@@ -163,7 +163,27 @@ h1, h2, h3, h4, h5, h6 {
     content: " ";
     font-size: 22px;
 }
+#topbar .social-links a {
+    font-size: 19px;
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
 
+#topbar .social-links a:hover {
+    font-size: 15px;
+    background: #138cb7;
+    color: #fff;
+    text-decoration: none;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/

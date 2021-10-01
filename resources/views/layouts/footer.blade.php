@@ -15,10 +15,9 @@
                             <strong>Email:</strong> erkansanlihairclinic@outlook.com<br>
                         </p>
                         <div class="social-links mt-3">
-                            <a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a>
-                            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="google-plus"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/erkansanlihairclinic/" class="facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/erkansanlisacekimi/" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCzYU83_3Rp4aPO9f_0ZiCHw" class="google-plus"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -48,12 +47,6 @@
                     <h4>Bültenimiz</h4>
                     <p>Yeni haberlerden ve kampanyalardan haberdar olmak için bültenimize abone olabilirsiniz.</p>
                     <!--YUSUF ERROR DİVİ BURDA-->
-                    @foreach($errors->all() as $error)
-
-                        <li>{{$error}}</li>
-
-
-                @endforeach
                 <!---->
                     <form  name="form2" method="post" action="{{route('mainpage.anasayfa.post')}}">
                         @csrf
