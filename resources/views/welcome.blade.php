@@ -282,96 +282,96 @@
     </div>
 </section><!-- End Events Section -->
 <!-- ======= Doctors Section ======= -->
-<section id="chefs" class="doctors">
-    <div class="container" data-aos="fade-up">
+{{--<section id="chefs" class="doctors">--}}
+{{--    <div class="container" data-aos="fade-up">--}}
 
-        <div class="section-title">
-            <h2>Doktorlar</h2>
-            <p>Doktorlarımız</p>
-        </div>
+{{--        <div class="section-title">--}}
+{{--            <h2>Doktorlar</h2>--}}
+{{--            <p>Doktorlarımız</p>--}}
+{{--        </div>--}}
 
-        <div class="row">
+{{--        <div class="row">--}}
 
-            <div class="col-lg-4 col-md-6">
-                <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="{{asset("./front/images/biz.jpg")}}" class="img-fluid" alt="">
-                    <div class="member-info">
-                        <div class="member-info-content">
-                            <h4>Erkan Şanlı</h4>
-                            <span>Doctor</span>
-                        </div>
-                        <div class="social">
-                            <a href=""><i class="fab fa-twitter-square"></i></a>
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="col-lg-4 col-md-6">--}}
+{{--                <div class="member" data-aos="zoom-in" data-aos-delay="100">--}}
+{{--                    <img src="{{asset("./front/images/biz.jpg")}}" class="img-fluid" alt="">--}}
+{{--                    <div class="member-info">--}}
+{{--                        <div class="member-info-content">--}}
+{{--                            <h4>Erkan Şanlı</h4>--}}
+{{--                            <span>Doctor</span>--}}
+{{--                        </div>--}}
+{{--                        <div class="social">--}}
+{{--                            <a href=""><i class="fab fa-twitter-square"></i></a>--}}
+{{--                            <a href=""><i class="fab fa-facebook"></i></a>--}}
+{{--                            <a href=""><i class="fab fa-instagram"></i></a>--}}
+{{--                            <a href=""><i class="fab fa-youtube"></i></a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
-            <div class="col-lg-4 col-md-6">
-                <div class="member" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="{{asset("./front/images/biz.jpg")}}" class="img-fluid" alt="">
-                    <div class="member-info">
-                        <div class="member-info-content">
-                            <h4>Erkan Şanlı</h4>
-                            <span>Doctor</span>
-                        </div>
-                        <div class="social">
-                            <a href=""><i class="fab fa-twitter-square"></i></a>
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="col-lg-4 col-md-6">--}}
+{{--                <div class="member" data-aos="zoom-in" data-aos-delay="200">--}}
+{{--                    <img src="{{asset("./front/images/biz.jpg")}}" class="img-fluid" alt="">--}}
+{{--                    <div class="member-info">--}}
+{{--                        <div class="member-info-content">--}}
+{{--                            <h4>Erkan Şanlı</h4>--}}
+{{--                            <span>Doctor</span>--}}
+{{--                        </div>--}}
+{{--                        <div class="social">--}}
+{{--                            <a href=""><i class="fab fa-twitter-square"></i></a>--}}
+{{--                            <a href=""><i class="fab fa-facebook"></i></a>--}}
+{{--                            <a href=""><i class="fab fa-instagram"></i></a>--}}
+{{--                            <a href=""><i class="fab fa-youtube"></i></a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
-            <div class="col-lg-4 col-md-6">
-                <div class="member" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="{{asset("./front/images/biz.jpg")}}" class="img-fluid" alt="">
-                    <div class="member-info">
-                        <div class="member-info-content">
-                            <h4>Erkan Şanlı</h4>
-                            <span>Doctor</span>
-                        </div>
-                        <div class="social">
-                            <a href=""><i class="fab fa-twitter-square"></i></a>
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="col-lg-4 col-md-6">--}}
+{{--                <div class="member" data-aos="zoom-in" data-aos-delay="300">--}}
+{{--                    <img src="{{asset("./front/images/biz.jpg")}}" class="img-fluid" alt="">--}}
+{{--                    <div class="member-info">--}}
+{{--                        <div class="member-info-content">--}}
+{{--                            <h4>Erkan Şanlı</h4>--}}
+{{--                            <span>Doctor</span>--}}
+{{--                        </div>--}}
+{{--                        <div class="social">--}}
+{{--                            <a href=""><i class="fab fa-twitter-square"></i></a>--}}
+{{--                            <a href=""><i class="fab fa-facebook"></i></a>--}}
+{{--                            <a href=""><i class="fab fa-instagram"></i></a>--}}
+{{--                            <a href=""><i class="fab fa-youtube"></i></a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
-        </div>
+{{--        </div>--}}
 
-    </div>
-</section><!-- End Doctors Section -->
+{{--    </div>--}}
+{{--</section><!-- End Doctors Section -->--}}
 <section id="numbers">
     <div class="container">
         <div class="numbers-inner">
             <div class="col-3" data-aos="zoom-in" data-aos-delay="100">
                 <i class="fas fa-globe-americas fa-4x"></i>
                 <h4>Dünyada Biz</h4>
-                <h3>7</h3>
+                <h3>7 Ülke</h3>
             </div>
             <div class="col-3" data-aos="zoom-in" data-aos-delay="200">
                 <i class="fas fa-user-md fa-4x"></i>
                 <h4>Doktor Sayısı</h4>
-                <h3>7</h3>
+                <h3>13</h3>
             </div>
             <div class="col-3" data-aos="zoom-in" data-aos-delay="300">
                 <i class="far fa-stethoscope fa-4x"></i>
                 <h4>Operasyon Sayısı</h4>
-                <h3>7</h3>
+                <h3>50000+</h3>
             </div>
             <div class="col-3" data-aos="zoom-in" data-aos-delay="400">
                 <i class="fas fa-business-time fa-4x"></i>
                 <h4>Deneyim</h4>
-                <h3>7</h3>
+                <h3>19 Yıl</h3>
             </div>
         </div>
     </div>

@@ -1177,18 +1177,8 @@ section {
 --------------------------------------------------------------*/
 #numbers{
     padding: 35px 0;
-
-    background: url(../images/numbers.jpg) center center no-repeat;
-    background-size: 100%;
+    background-color: white;
     position: relative;
-}
-#numbers::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
 }
 #numbers .numbers-inner{
     display: flex;
@@ -1201,12 +1191,15 @@ section {
 }
 #numbers .numbers-inner div i{
     margin-bottom: 2%;
+    color: #138cb7;
 }
 #numbers .numbers-inner div h4{
     margin-bottom: 1%;
+    color: #138cb7;
 }
 #numbers .numbers-inner div h3{
     margin-bottom: 1%;
+    color: #138cb7;
 }
 /*--------------------------------------------------------------
 # Contact
