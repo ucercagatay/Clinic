@@ -56,7 +56,7 @@
 <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-        <a href="#"><img class="logo"  src="{{ asset('front/images/Logo1.png') }}" alt=""></a>
+        <a href="{{Route('mainpage.anasayfa')}}"><img class="logo"  src="{{ asset('front/images/Logo1.png') }}" alt=""></a>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 

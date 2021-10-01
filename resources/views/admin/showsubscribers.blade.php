@@ -14,6 +14,7 @@
                  <tr>
                      <th>İd</th>
                      <th>Email</th>
+                     <td>Eylemler</td>
 
                  </tr>
                     </thead>

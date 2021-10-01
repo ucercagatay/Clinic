@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 
 class WordFilter
 {
@@ -635,13 +636,13 @@ if(in_array($request->email , $kotuKelime)){
     return back()->withErrors('Kötü kelimeler kullanamazsınız');
 }
     if(in_array($request->name , $kotuKelime)){
-            return back()->withErrors('Kötü Kelimeler kullanamazınız');
+        return redirect()->back()->withErrors('kötü kelimeler kullanamazınız');
         }
         if(in_array($request->surname , $kotuKelime)){
-            return back()->withErrors('Kötü Kelimeler kullanamazınız');
+            return redirect()->back()->withErrors('kötü kelimeler kullanamazınız');
         }
         if(in_array($request->message , $kotuKelime)){
-            return back()->withErrors('kötü kelimeler kullanamazınız');
+            return redirect()->back()->withErrors('kötü kelimeler kullanamazınız');
         }
         return $next($request);
     }
