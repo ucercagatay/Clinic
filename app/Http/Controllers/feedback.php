@@ -13,7 +13,8 @@ class feedback extends Controller
     }
 
     public function message(Request $request)
-    {  if($request->has('form1')){
+    {
+
         $validated=$request->validate([
             'name' =>'required|min:3|max:30',
             'surname'=>'required|min:3|max:24',
@@ -23,11 +24,7 @@ class feedback extends Controller
             'message'=>'min:3|max:240',
         ]);
         if($validated==1){
-            return back()->withErrors();
-        }
-        else {
-
-            DB::table('contacts')->insert([
+            $message=DB::table('contacts')->insert([
                 'name'=>$request->input('name'),
                 'surname'=>$request->input('surname'),
                 'email'=>$request->input('email'),
@@ -37,10 +34,16 @@ class feedback extends Controller
                 'created_at'=>now(),
                 'updated_at'=>now(),
             ]);
-            return back();
+            if($message==1){
+                return 'Mesajınız gönderilmiştir';
+            }
+            else{
+                return 'Mesajınız gönderilemedi';
+            }
+
         }
-    }
+
+        }
 
 
-    }
 }

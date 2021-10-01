@@ -31,13 +31,9 @@ Route::prefix('/es1609')->middleware('isLogin')->name('admin.')->group(function 
 //Anasayfa abonepost
 Route::prefix('/')->name('mainpage.')->middleware('wordfilter')->group(function(){
     Route::get('/', function () {return view('welcome');})->name('anasayfa');
-    Route::post('/' , [Controllers\Subscribers::class,'subscribe'])->middleware('wordfilter')->name('anasayfa.post');
+    Route::post('/subscribe-ol' , [Controllers\Subscribers::class,'subscribe'])->name('anasayfa.post');
+    Route::post('/mail-gonder',[Controllers\feedback::class,'message'])->name('erkansanli.post');
 });
-//Anasayfa mesajpost
-/*Route::prefix('/')->name('anasayfa.')->group(function(){
-    Route::get('/',function(){return view('welcome');})->name('erkansanli');
-    Route::post('/',[Controllers\feedback::class,'message'])->name('erkansanli.post');
-});*/
 //Sayfalama işlemleri
 Route::prefix('/pages')->name('page.')->group(function(){
     Route::get('/sacekimi',[Controllers\pages::class,'hairpages'])->name('hairpage');
