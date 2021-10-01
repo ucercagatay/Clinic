@@ -9,10 +9,10 @@
                     <div class="footer-info">
                         <h3>Erkan Şanlı Hair Cilinic</h3>
                         <p>
-                            A108 Adam Street <br>
-                            NY 535022, USA<br><br>
-                            <strong>Telefon:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            Cevizlik Mh. Ebuzziya Cd. No:63 <br>
+                            Bakırköy Istanbul, Turkey<br><br>
+                            <strong>Telefon:</strong> +90 (507) 335 95 70<br>
+                            <strong>Email:</strong> erkansanlihairclinic@outlook.com<br>
                         </p>
                         <div class="social-links mt-3">
                             <a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a>
@@ -47,7 +47,15 @@
                 <div class="col-lg-4 col-md-6 footer-newsletter">
                     <h4>Bültenimiz</h4>
                     <p>Yeni haberlerden ve kampanyalardan haberdar olmak için bültenimize abone olabilirsiniz.</p>
-                    <form  method="post" action="{{route('mainpage.anasayfa.post')}}">
+                    <!--YUSUF ERROR DİVİ BURDA-->
+                    @foreach($errors->all() as $error)
+
+                        <li>{{$error}}</li>
+
+
+                @endforeach
+                <!---->
+                    <form  name="form2" method="post" action="{{route('mainpage.anasayfa.post')}}">
                         @csrf
                         <input type="email" name="email">
                         <input type="submit" value="Abone Ol">
