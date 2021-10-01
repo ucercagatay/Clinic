@@ -430,7 +430,7 @@
 
 
                 @endforeach
-                <form  method="post"   action="" role="form" class="php-email-form">
+                <form  method="post" name="form1"  action="" role="form" class="php-email-form">
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <input type="text" name="name" class="form-control" id="name" placeholder="İsim" required>
@@ -529,7 +529,7 @@
 
                     @endforeach
                     <!---->
-                    <form  method="post" action="{{route('mainpage.anasayfa.post')}}">
+                    <form  name="form2" method="post" action="{{route('mainpage.anasayfa.post')}}">
                         @csrf
                         <input type="email" name="email">
                         <input type="submit" value="Abone Ol">

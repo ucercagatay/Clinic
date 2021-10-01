@@ -24,13 +24,14 @@ Route::prefix('/es1609')->middleware('isLogin')->name('admin.')->group(function 
     Route::get('/panel/messages',[Controllers\admin::class,'showFeedback'])->name('messages');
     Route::post('/panel/messages',[Controllers\admin::class,'destroy'])->name('messages.post');
     Route::get('/panel/subscribers',[Controllers\subscribers::class,'showSubscriber'])->name('subscribers');
+    Route::post('/panel/subscribers',[Controllers\admin::class,'delete'])->name('subscribers.post');
 });
 //Sayfalar
 //Anasayfa işlemleri
 //Anasayfa abonepost
-Route::prefix('/')->name('mainpage.')->middleware('WordFilter')->group(function(){
+Route::prefix('/')->name('mainpage.')->middleware('wordfilter')->group(function(){
     Route::get('/', function () {return view('welcome');})->name('anasayfa');
-    Route::post('/' , [Controllers\subscribers::class,'subscribe'])->name('anasayfa.post');
+    Route::post('/' , [Controllers\Subscribers::class,'subscribe'])->middleware('wordfilter')->name('anasayfa.post');
 });
 //Anasayfa mesajpost
 /*Route::prefix('/')->name('anasayfa.')->group(function(){

@@ -631,8 +631,8 @@ aminako',
 'zulliyetini',
 'zviyetini',
 ];
-if(in_array($request->email,$kotuKelime)){
-    return back()->withErrors('Kötü ifade içeren kelimeler kullanamazsınız');
+if(in_array($request->email , $kotuKelime)){
+    return redirect()->back()->withErrors('Kötü ifade içeren kelimeler kullanamazsınız');
 }
         return $next($request);
     }

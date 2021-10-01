@@ -23,7 +23,13 @@
                       <tr>
                           <td>{{$subscriber->id}}</td>
                           <td>{{$subscriber->email}}</td>
-
+                          <td>
+                              <form method="post" action="{{route('admin.subscribers.post')}}" >
+                                  <!-- here the '1' is the id of the post which you want to delete -->
+                                  @csrf
+                                  <input type="hidden" name="delete" value="{{$subscriber->id}}">
+                                  <button class="btn btn-danger" type="submit"><i class="fas fa-trash-alt"></i> Sil</button>
+                              </form></td>
                       </tr>
                         <br>
                         @endforeach

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Subscriber;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -27,6 +28,10 @@ class admin extends Controller
     public function destroy(Request $request){
        Contact::where('id',$request->delete)->delete();
         return redirect()->route('admin.messages');
+    }
+    public function delete(Request $request){
+        Subscriber::where('id',$request->delete)->delete();
+        return redirect()->route('admin.subscribers');
     }
     public function logScreen(){
         return view('admin.loginscreen');

@@ -9,11 +9,11 @@ use Illuminate\Support\Facades\DB;
 class Subscribers extends Controller
 {
     public function subscribe(Request $request){
-        $validation=$request->validate([
-        'email' =>'required|email|unique:subscribers,email'
-        ]);
+            $validation=$request->validate([
+                'email' =>'required|email|unique:subscribers,email'
+            ]);
             if($validation==1){
-                return back()->withErrors('Bir mail sadece bir kere abone olabilir');
+                return back()->withErrors('Daha önce abone olmuşsunuz.');
             }
             else {
                 DB::table('subscribers')->insert([
@@ -23,6 +23,8 @@ class Subscribers extends Controller
                 ]);
                 return back();
             }
+
+
     }
     public function showSubscriber(){
         $subscribers=Subscriber::all();
