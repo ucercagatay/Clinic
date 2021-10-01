@@ -41,16 +41,15 @@
 <body>
 <div class="login-dik">
     <div class="mavi-Logo">
-        <img src="{{asset("admin/adminpanel/admin-images/logo.png")}}" alt="">
     </div>
     <img class="pattern" src="{{asset("admin/logscreen/images/login.png")}}" alt="">
     <form  method="post" action="{{route('admin.login.post')}}"class="login100-form validate-form">
         @csrf
-        <span class="login100-form-title p-b-43">
-						Login to continue
-					</span>
 
 
+        <div class="form-logo">
+            <img src="{{asset("admin/adminpanel/admin-images/logoWhite.png")}}" alt="">
+        </div>
         <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
             <input class="input100" type="text" name="email">
             <span class="focus-input100"></span>

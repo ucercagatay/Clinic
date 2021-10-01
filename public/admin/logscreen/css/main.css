@@ -290,7 +290,6 @@ iframe {
   height: 80px;
   position: relative;
   border: 1px solid #e6e6e6;
-  border-radius: 10px;
   margin-bottom: 10px;
 }
 
@@ -344,7 +343,6 @@ input.input100 {
   left: -1px;
   pointer-events: none;
   border: 1px solid #6675df;
-  border-radius: 10px;
 
   visibility: hidden;
   opacity: 0;
@@ -383,9 +381,7 @@ input.input100 {
   transform: scale(1);
 }
 
-.input100:focus {
-  height: 48px;
-}
+
 
 .input100:focus + .focus-input100 + .label-input100 {
   top: 14px;
@@ -477,8 +473,6 @@ input.input100 {
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  border-radius: 10px;
-  background: #6675df;
 
   font-family: Montserrat-Bold;
   font-size: 12px;
@@ -626,6 +620,18 @@ input.input100 {
     overflow: hidden;
     display: flex;
     align-items: center;
+    background: url("../images/back.jpg") top center no-repeat;
+    position: relative;
+    background-size: cover;
+}
+.login-dik .form-logo{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.login-dik .form-logo img{
+    margin: 15px;
+    width: 40%;
 }
 .login-dik svg{
     transform: rotate(90deg);
@@ -634,6 +640,7 @@ input.input100 {
     width: 63vw;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .login-dik .mavi-Logo img{
     width: 35%;
@@ -643,6 +650,10 @@ input.input100 {
     transform: rotate(180deg);
     margin-right: -1px;
     width: 10.5vw;
+    position: relative;
+}
+.login-dik form{
+    position: relative;
 }
 .login-dik .login100-form{
     right: 0;
