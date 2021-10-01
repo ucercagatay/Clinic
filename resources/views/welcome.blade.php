@@ -424,13 +424,9 @@
             </div>
 
             <div class="col-lg-8 mt-5 mt-lg-0">
-                @foreach($errors->all() as $error)
 
-                    <li>{{$error}}</li>
-
-
-                @endforeach
-                <form  method="post" name="form1"  action="" role="form" class="php-email-form">
+                <form  method="post" name="form1"  action="{{route('mainpage.erkansanli.post')}}" role="form" class="php-email-form">
+                    @csrf
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <input type="text" name="name" class="form-control" id="name" placeholder="İsim" required>
@@ -460,7 +456,14 @@
                     </div>
                     <div class="my-3">
                         <div class="loading">Yükleniyor</div>
-                        <div class="error-message"></div>
+                        <div class="error-message">
+                            @foreach($errors->all() as $error)
+
+                                <li>{{$error}}</li>
+
+
+                            @endforeach
+                        </div>
                         <div class="sent-message">Mesajınız bize ulaştı. Teşekkür ederiz!</div>
                     </div>
                     <div class="text-center"><button type="submit">Mesajı Gönder</button></div>
@@ -527,8 +530,8 @@
                         <li>{{$error}}</li>
 
 
-                    @endforeach
-                    <!---->
+                @endforeach
+                <!---->
                     <form  name="form2" method="post" action="{{route('mainpage.anasayfa.post')}}">
                         @csrf
                         <input type="email" name="email">

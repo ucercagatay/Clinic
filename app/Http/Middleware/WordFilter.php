@@ -16,7 +16,7 @@ class WordFilter
      */
     public function handle(Request $request, Closure $next)
     {
-       $kotuKelime=['abaza',
+       $kotuKelime=['anan','s2ml3yuzles','abaza',
 'abazan',
         ',
 ag',
@@ -632,8 +632,17 @@ aminako',
 'zviyetini',
 ];
 if(in_array($request->email , $kotuKelime)){
-    return redirect()->back()->withErrors('Kötü ifade içeren kelimeler kullanamazsınız');
+    return back()->withErrors('Kötü kelimeler kullanamazsınız');
 }
+    if(in_array($request->name , $kotuKelime)){
+            return back()->withErrors('Kötü Kelimeler kullanamazınız');
+        }
+        if(in_array($request->surname , $kotuKelime)){
+            return back()->withErrors('Kötü Kelimeler kullanamazınız');
+        }
+        if(in_array($request->message , $kotuKelime)){
+            return back()->withErrors('kötü kelimeler kullanamazınız');
+        }
         return $next($request);
     }
 }

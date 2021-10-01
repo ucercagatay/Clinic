@@ -13,7 +13,7 @@ class feedback extends Controller
     }
 
     public function message(Request $request)
-    {  if($request->has('form1')){
+    {
         $validated=$request->validate([
             'name' =>'required|min:3|max:30',
             'surname'=>'required|min:3|max:24',
@@ -22,25 +22,18 @@ class feedback extends Controller
             'option'=>'required',
             'message'=>'min:3|max:240',
         ]);
-        if($validated==1){
-            return back()->withErrors();
-        }
-        else {
-
-            DB::table('contacts')->insert([
-                'name'=>$request->input('name'),
-                'surname'=>$request->input('surname'),
-                'email'=>$request->input('email'),
-                'phoneNumber'=>$request->input('phoneNumber'),
-                'option'=>$request->input('option'),
-                'message'=>$request->input('message'),
-                'created_at'=>now(),
-                'updated_at'=>now(),
-            ]);
-            return back();
-        }
-    }
+          DB::table('contacts')->insert([
+              'name'=>$request->input('name'),
+              'surname'=>$request->input('surname'),
+              'email'=>$request->input('email'),
+              'phoneNumber'=>$request->input('phoneNumber'),
+              'option'=>$request->input('option'),
+              'message'=>$request->input('message'),
+              'created_at'=>now(),
+              'updated_at'=>now(),
+          ]);
+       return back();
+      }
 
 
-    }
 }

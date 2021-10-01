@@ -26,6 +26,7 @@ class Subscribers extends Controller
 
 
     }
+
     public function showSubscriber(){
         $subscribers=Subscriber::all();
         return view('admin.showsubscribers',compact('subscribers'));
