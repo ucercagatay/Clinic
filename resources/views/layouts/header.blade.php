@@ -27,33 +27,32 @@
 
         <nav id="inner-navbar" class="navbar order-last order-lg-0">
             <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Ana Sayfa</a></li>
+                <li><a class="nav-link scrollto active" href="{{route('mainpage.anasayfa')}}">Ana Sayfa</a></li>
                 <li><a class="nav-link scrollto" href="#about">Hakkımızda</a></li>
                 <li class="dropdown"><a class="nav-link scrollto" href="#events">Saç Tedavileri</a>
                     <ul>
                         <i class="fas fa-triangle"></i>
-                        <li><a href="">Saç Lazeri</a></li>
-                        <li><a href="">..Tedavi</a></li>
-                        <li><a href="">..Tedavi</a></li>
-                        <li><a href="">..Tedavi</a></li>
+                        <li><a href="{{Route('page.hairlaser')}}">Saç Lazeri</a></li>
+                        <li><a href="{{Route('page.mezoterapi')}}">Mezoterapi</a></li>
+                        <li><a href="{{Route('page.prptedavi')}}">PRP Tedavisi</a></li>
                     </ul></li>
                 <li class="dropdown"><a href="#"><span>Saç Ekimi</span></a>
                     <ul>
                         <i class="fas fa-triangle"></i>
-                        <li><a href="">Safir FUE Saç Ekimi</a></li>
-                        <li><a href="">FUE Saç Ekimi</a></li>
-                        <li><a href="">DHI Saç Ekimi</a></li>
-                        <li><a href="">Tıraşsız Saç Ekimi</a></li>
+                        <li><a href="{{Route('page.hairpage')}}">Safir FUE Saç Ekimi</a></li>
+                        <li><a href="{{Route('page.hairpage')}}">FUE Saç Ekimi</a></li>
+                        <li><a href="{{Route('page.hairpage')}}">DHI Saç Ekimi</a></li>
+                        <li><a href="{{Route('page.hairpage')}}">Tıraşsız Saç Ekimi</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a class="nav-link scrollto" href="#">Kaş-Sakal Ekimi</a>
                     <ul>
                         <i class="fas fa-triangle"></i>
-                        <li><a href="">Kaş EKimi</a></li>
-                        <li><a href="">Sakal-Bıyık Ekimi</a></li>
+                        <li><a href="{{Route('page.eyebrowpage')}}">Kaş EKimi</a></li>
+                        <li><a href="{{Route('page.beardmustache')}}">Sakal-Bıyık Ekimi</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="#">Burun-Göz Estetiği</a></li>
+                <li><a class="nav-link scrollto" href="{{Route('page.esteticpage')}}">Burun-Göz Estetiği</a></li>
             </ul>
             <i class="fas fa-bars mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

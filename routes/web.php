@@ -27,7 +27,6 @@ Route::prefix('/es1609')->middleware('isLogin')->name('admin.')->group(function 
     Route::post('/panel/subscribers',[Controllers\admin::class,'delete'])->name('subscribers.post');
 });
 //Sayfalar
-//Anasayfa işlemleri
 //Anasayfa abonepost
 Route::prefix('/')->name('mainpage.')->middleware('wordfilter')->group(function(){
     Route::get('/', function () {return view('welcome');})->name('anasayfa');
@@ -37,6 +36,12 @@ Route::prefix('/')->name('mainpage.')->middleware('wordfilter')->group(function(
 //Sayfalama işlemleri
 Route::prefix('/pages')->name('page.')->group(function(){
     Route::get('/sacekimi',[Controllers\pages::class,'hairpages'])->name('hairpage');
+    Route::get('/estetik',[Controllers\pages::class,'esteticpages'])->name('esteticpage');
+    Route::get('/sacekimi/kas_ekimi',[Controllers\pages::class,'eyebrowpages'])->name('eyebrowpage');
+    Route::get('/sacekimi/sakal_biyik_ekimi',[Controllers\pages::class,'beardmustache'])->name('beardmustache');
+    Route::get('/sacekimi/tedaviler/mezoterapi',[Controllers\pages::class,'mezoterapi'])->name('mezoterapi');
+    Route::get('/sacekimi/tedaviler/prp_tedavi',[Controllers\pages::class,'prptedavi'])->name('prptedavi');
+    Route::get('/sacekimi/tedaviler/sac_lazeri',[Controllers\pages::class,'hairlaser'])->name('hairlaser');
 
 });
 
