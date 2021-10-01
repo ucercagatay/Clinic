@@ -22,7 +22,7 @@
                                     <i class="fas fa-atom fa-2x"></i>
                                 </div>
                                 <div class="numberA">
-                                    <h2>5</h2>
+                                    <h2>{{$contacts->count()}}</h2>
                                 </div>
                             </div>
                             <div class="more-menuA">
@@ -36,7 +36,7 @@
                                     <i class="fas fa-user-tag fa-2x"></i>
                                 </div>
                                 <div class="numberA">
-                                    <h2>2</h2>
+                                    <h2>{{$subscribers->count()}}</h2>
                                 </div>
                             </div>
                             <div class="more-menuA">
@@ -60,37 +60,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tables">
-                <div class="col-lg-12">
-                    <div class="card card-red">
-                        <div class="card-header border-0">
-                            <h3 class="card-title">En Çok Mesaj Gelenler</h3>
-                        </div>
-                        <div class="card-body table-responsive p-0" style="">
-                            <table class="table table-striped table-valign-middle">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>ID</th>
-                                    <th>Başlık</th>
-                                    <th>Eklenme Sayısı</th>
-                                </tr>
-                                </thead>
-                                <tbody>
 
-                                    <tr>
-                                        <td>sdfgsdfg</td>
-                                        <td>sdfgsdf</td>
-                                        <td>sdfgsdfg</td>
-                                        <td>fdhdfh</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
 @endsection

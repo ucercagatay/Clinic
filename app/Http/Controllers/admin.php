@@ -37,6 +37,9 @@ class admin extends Controller
         return view('admin.loginscreen');
     }
     public function panel(){
-        return view('admin.panel');
+        $contacts =Contact::all();
+        $subscribers=Subscriber::all();
+        return view('admin.panel',compact('contacts','subscribers'));
     }
+
 }
