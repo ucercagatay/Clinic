@@ -356,6 +356,13 @@
                 <i class="fas fa-globe-americas fa-4x"></i>
                 <h4>Dünyada Biz</h4>
                 <h3>7 Ülke</h3>
+                <p>Merkez İstanbul -
+                    Fas -
+                    Diyarbakır -
+                    Kuwait -
+                    Bahreyn -
+                    Irak/musul -
+                    Irak/Erbi</p>
             </div>
             <div class="col-3" data-aos="zoom-in" data-aos-delay="200">
                 <i class="fas fa-user-md fa-4x"></i>
