@@ -361,7 +361,7 @@
             <div class="col-3" data-aos="zoom-in" data-aos-delay="200">
                 <i class="fas fa-user-md fa-4x"></i>
                 <h4>Doktor Sayısı</h4>
-                <h3>13</h3>
+                <h3>12</h3>
             </div>
             <div class="col-3" data-aos="zoom-in" data-aos-delay="300">
                 <i class="far fa-stethoscope fa-4x"></i>
