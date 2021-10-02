@@ -1,5 +1,10 @@
 @extends('admin.layouts.master')
 @section('content')
+    <div style="display: none;">
+        @php
+            $number=1;
+        @endphp
+    </div>
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             Mesajlar
@@ -9,6 +14,7 @@
     <!-- Page Content -->
         <div class="py-6">
             <div class="max-w-7xl mx-auto">
+
                <table class="table table-striped table-bordered">
                    <thead>
                    <tr>
@@ -24,13 +30,15 @@
                    </tr>
                    </thead>
                    <br>
+
                    <tbody>
+
                    @foreach($contacts as $contact)
+
                    <tr>
                        <td><h6>
-                           @for($i = 0; $i <$contact->count();$i++)
-                               @endfor
-                               {{$i}}
+                               {{$number}}
+
                            </h6></td>
                        <td>{{$contact->name}}</td>
                        <td>{{$contact->surname}}</td>
@@ -49,6 +57,7 @@
                    </tr>
 
                    <br>
+                       {{$number++}}
                    @endforeach
                    </tbody>
                </table>

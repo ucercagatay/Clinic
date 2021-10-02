@@ -446,7 +446,7 @@
                             <input type="email" class="form-control" name="email" id="email" placeholder="E-mail adresiniz" required>
                         </div>
                     </div>
-                    <div class="form-group mt-3">
+                    <div  class="form-group mt-3">
                         <select name="option" class="form-select" aria-label="Default select example">
                             <option selected>Lütfen Seçiniz</option>
                             <option value="1">Saç Ekimi Ve Tedavileri</option>
@@ -457,17 +457,15 @@
                     <div class="form-group mt-3">
                         <textarea class="form-control" name="message" rows="8" placeholder="Mesaj" required></textarea>
                     </div>
-                    <div class="my-3">
+                    <div  class="my-3">
                         <div class="loading">Yükleniyor</div>
-                        <div class="error-message">
+                        <div  class="error-message">
                             @foreach($errors->all() as $error)
 
                                 <li>{{$error}}</li>
-
-
                             @endforeach
                         </div>
-                        <div class="sent-message">Mesajınız bize ulaştı. Teşekkür ederiz!</div>
+                        <div  class="sent-message">Mesajınız bize ulaştı. Teşekkür ederiz!</div>
                     </div>
                     <div class="text-center"><button type="submit">Mesajı Gönder</button></div>
                 </form>
@@ -565,6 +563,26 @@
 <script src="{{ asset('front/vendor/swiper/swiper-bundle.min.js') }}"></script>
 <script src="{{ asset('front/Script/script.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
+$(document).ready(function(){
+    if('{{session('success')}}'=='1'){
+        Swal.fire({
+            title: 'Kayıt',
+            text: 'Abonelik talebiniz başarıyla alınmıştır.',
+            icon: 'success',
+            button: 'tamam',
+        })
+    }
+    else if('{{$errors->subscribe->first('email')}}'){
+        Swal.fire({
+            title: 'Hata',
+            text:'Aynı mail adresi iki defa kayıt olamaz',
+            icon:'error',
+            button:'tamam',
+        })
+    }
+})
 </script>
 </html>
