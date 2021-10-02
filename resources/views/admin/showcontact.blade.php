@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 @section('content')
-    <div style="display: none;">
+    <div  style="display: none; visibility: hidden;">
         @php
             $number=1;
         @endphp
@@ -57,7 +57,9 @@
                    </tr>
 
                    <br>
-                       {{$number++}}
+                       @php
+                       $number++
+                           @endphp
                    @endforeach
                    </tbody>
                </table>
