@@ -770,7 +770,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-    background: url("../images/slider2.jpg") center center;
+    background: url("../images/back2.png") center center;
     background-size: cover;
     position: relative;
     padding: 80px 0;
@@ -875,7 +875,6 @@ section {
     PHOTOS
 */
 #photos{
-    margin-top: 3%;
     min-height: 360px;
     background-color: white;
     padding: 60px 0;
