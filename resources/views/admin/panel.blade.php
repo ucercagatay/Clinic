@@ -43,15 +43,6 @@
                                 <a href="{{route('admin.subscribers')}}"> Detaylara Git <i class="fas fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
-                        <div class="cardA">
-                            <div class="card-nameA">Toplam Ziyaretçi Sayısı :</div>
-                            <div class="contentA">
-                                <div class="iconA">
-                                    <i class="fas fa-user fa-2x"></i>
-                                </div>
-                                <div class="numberA">
-                                    <h2>121</h2>
-                                </div>
                             </div>
                             <div class="more-menuA">
                                 <a> Detaylara Git <i class="fas fa-arrow-circle-right"></i></a>

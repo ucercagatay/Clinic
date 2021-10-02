@@ -39,6 +39,7 @@ class admin extends Controller
     public function panel(){
         $contacts =Contact::all();
         $subscribers=Subscriber::all();
+
         return view('admin.panel',compact('contacts','subscribers'));
     }
 

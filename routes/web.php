@@ -18,6 +18,7 @@ Route::prefix('/es1609')->name('admin.')->group(function () {
     Route::post('/giris',[Controllers\admin::class,'loginPass'])->name('login.post');
 });
 //Giriş doğru olduğu durumda panel içindeki route işlemleri
+Route::get('/es1609',[Controllers\admin::class,'logScreen'])->middleware('isOut')->name('log');
 Route::prefix('/es1609')->middleware('isLogin')->name('admin.')->group(function () {
     Route::get('/panel',[Controllers\admin::class,'panel'])->name('panel');
     Route::get('/adminout',[Controllers\admin::class,'adminOut'])->name('adminOut');

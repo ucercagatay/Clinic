@@ -25,7 +25,7 @@
         <nav id="inner-navbar" class="navbar order-last order-lg-0">
             <ul>
                 <li><a class="nav-link scrollto active" href="{{route('mainpage.anasayfa')}}">Ana Sayfa</a></li>
-                <li><a class="nav-link scrollto" href="#about">Hakkımızda</a></li>
+                <li><a class="nav-link scrollto" href="{{Route('mainpage.anasayfa')}}#about">Hakkımızda</a></li>
                 <li class="dropdown"><a class="nav-link scrollto" href="#events">Saç Tedavileri</a>
                     <ul>
                         <i class="fas fa-triangle"></i>

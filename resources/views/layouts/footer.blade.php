@@ -25,21 +25,21 @@
                 <div class="col-lg-2 col-md-6 footer-links">
                     <h4>Kısa Linkler</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Ana sayfa</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Hakkımzıda</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Sakal Ekimi</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Kaş Ekimi</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Saç Lazeri</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{Route('mainpage.anasayfa')}}">Ana sayfa</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{Route('mainpage.anasayfa')}}#about">Hakkımzıda</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{Route('page.beardmustache')}}">Sakal Ekimi</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{Route('page.eyebrowpage')}}">Kaş Ekimi</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{Route('page.hairlaser')}}">Saç Lazeri</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Saç Ekimi Ve Tedavileri</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Safir FUE Saç Ekimi</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">FUE Saç Ekimi</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">DHI Saç Ekimi</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Tıraşsız Saç Ekimi</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{Route('page.hairpage')}}">Safir FUE Saç Ekimi</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{Route('page.hairpage')}}">FUE Saç Ekimi</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{Route('page.hairpage')}}">DHI Saç Ekimi</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{Route('page.hairpage')}}">Tıraşsız Saç Ekimi</a></li>
                     </ul>
                 </div>
 
@@ -47,6 +47,16 @@
                     <h4>Bültenimiz</h4>
                     <p>Yeni haberlerden ve kampanyalardan haberdar olmak için bültenimize abone olabilirsiniz.</p>
                     <!--YUSUF ERROR DİVİ BURDA-->
+                    <div class="my-3">
+
+                        <div class="error-message">
+                            @foreach($errors->all() as $error)
+
+                                <li>{{$error}}</li>
+
+
+                            @endforeach
+                        </div>
                 <!---->
                     <form  name="form2" method="post" action="{{route('mainpage.anasayfa.post')}}">
                         @csrf

@@ -12,7 +12,7 @@
                <table class="table table-striped table-bordered">
                    <thead>
                    <tr>
-                       <th>İd</th>
+                       <th>Adet</th>
                        <th>İsim</th>
                        <th>Soyisim</th>
                        <th>Email</th>
@@ -27,7 +27,11 @@
                    <tbody>
                    @foreach($contacts as $contact)
                    <tr>
-                       <td><h6>{{$contact->id}}</h6></td>
+                       <td><h6>
+                           @for($i = 0; $i <$contact->count();$i++)
+                               @endfor
+                               {{$i}}
+                           </h6></td>
                        <td>{{$contact->name}}</td>
                        <td>{{$contact->surname}}</td>
                        <td>{{$contact->email}}</td>
