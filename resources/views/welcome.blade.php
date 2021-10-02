@@ -583,6 +583,14 @@ $(document).ready(function(){
             button:'tamam',
         })
     }
+    else if('{{session('success')}}'=='2'){
+        Swal.fire({
+            title:'Mesaj',
+            text:'Mesajınız bize ulaşmıştır.',
+            icon:'success',
+            button:'okay',
+        })
+    }
 })
 </script>
 </html>
