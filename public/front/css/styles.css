@@ -1163,7 +1163,7 @@ section {
 }
 
 .inner-page{
-    background: url(../images/slider4.jpg) center center no-repeat;
+    background: url(../images/backinner.jpg) center center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -1609,7 +1609,7 @@ section {
     transition: all 0.5s;
     z-index: 996;
     position: relative;
-    background: url(../images/slider4.jpg) top center no-repeat;
+    background: url(../images/backinner.jpg) top center no-repeat;
     background-size: cover;
 }
 #inner-topbar::before{
