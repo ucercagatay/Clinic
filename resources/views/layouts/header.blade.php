@@ -18,7 +18,7 @@
 <header id="innerHeader" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-        <a href="#"><img class="logo"  src="{{ asset('front/images/Logo1.png') }}" alt=""></a>
+        <a href="{{route('mainpage.anasayfa')}}"><img class="logo"  src="{{ asset('front/images/Logo1.png') }}" alt=""></a>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -33,9 +33,9 @@
                         <li><a href="{{Route('page.mezoterapi')}}">Mezoterapi</a></li>
                         <li><a href="{{Route('page.prptedavi')}}">PRP Tedavisi</a></li>
                     </ul></li>
-                <li class="dropdown"><a href="#"><span>Saç Ekimi</span></a>
+                <li class="dropdown"><a href="{{Route('page.hairpage')}}"><span>Saç Ekimi</span></a>
                     <ul>
-                        <i class="fas fa-triangle"></i>
+                        <i  class="fas fa-triangle"></i>
                         <li><a href="{{Route('page.hairpage')}}">Safir FUE Saç Ekimi</a></li>
                         <li><a href="{{Route('page.hairpage')}}">FUE Saç Ekimi</a></li>
                         <li><a href="{{Route('page.hairpage')}}">DHI Saç Ekimi</a></li>

@@ -225,7 +225,7 @@
                 <div class="swiper-slide" id="slide1">
                     <div class="row event-item">
                         <div class="col-lg-6">
-                            <img src="{{ asset('front/images/slider1.png') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('front/images/sacEkimi11.png') }}" class="img-fluid" alt="">
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 content">
                             <h3>SAÇ EKİMİ</h3>
@@ -243,7 +243,7 @@
                 <div class="swiper-slide" id="slide2">
                     <div class="row event-item">
                         <div class="col-lg-6">
-                            <img src="{{ asset('front/images/slider2.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('front/images/inner-page/kasEkimi1.jpg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 content">
                             <h3>KAŞ EKİMİ</h3>
@@ -257,7 +257,7 @@
                 <div class="swiper-slide" id="slide3">
                     <div class="row event-item">
                         <div class="col-lg-6">
-                            <img src="{{ asset('front/images/slider3.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('front/images/inner-page/sakalBiyik1.jpg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 content">
                             <h3>SAKAL EKİMİ</h3>

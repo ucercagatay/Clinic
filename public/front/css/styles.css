@@ -959,7 +959,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-    background: url(../images/slider4.jpg) center center no-repeat;
+    background: url(../images/back.jpg) center center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -1173,7 +1173,7 @@ section {
 }
 .inner-page img{
     width: 400px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 50px;
     float: left;
 }
@@ -1231,7 +1231,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact{
-    background: url(../images/slider4.jpg) center center no-repeat;
+    background: url(../images/back.jpg) center center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -1571,6 +1571,27 @@ section {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
+#inner-topbar .social-links a {
+    font-size: 19px;
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+#inner-topbar .social-links a:hover {
+    font-size: 15px;
+    background: #138cb7;
+    color: #fff;
+    text-decoration: none;
+}
 #inner-topbar {
     height: 40px;
     font-size: 14px;
