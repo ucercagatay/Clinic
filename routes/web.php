@@ -46,6 +46,3 @@ Route::prefix('/pages')->name('page.')->group(function(){
 
 });
 
-//Denemek amaçlı kullanılan routelar
-Route::get('/denemepage',[Controllers\test::class,'pagetest'])->name('pagetest');
-Route::get('/yusuf',[Controllers\test::class,'yusuf']);

@@ -16,7 +16,7 @@
 
 <section class="inner-page">
     <div class="container">
-        <img class="sol" src="{{ asset("front/images/sacekimi.jpg") }}" alt="">
+        <img class="sol" src="{{ asset("front/images/hairph1.jpg") }}" alt="">
         <h2>Saç Ekimi</h2>
         <p>
             Saç ekimi tedavisi, saçları dökülmüş, seyrelmiş, yanmış v.b. sıkıntılar yaşayan kişilerde, bu bölgelerde yeniden saç çıkışını sağlamak için yapılan cerrahi bir uygulamadır.
@@ -28,7 +28,7 @@
         <p>Saç ekimi klinik ortamda steril olarak uzman bir doktor tarafından yürütülmesi gereken ve titizlik gerektiren bir operasyondur.</p>
         <p>Saç ekiminin tam olarak başarıya ulaşabilmesi için başlangıcından itibaren tüm süreçlerde uzmanların uyarılarına harfiyen uymalı, yıkama işlemleri uzmanların söylediği şekilde yapılmalı ve sert darbelerden mutlaka uzak durulmalıdır.</p>
         <p>Hastane ortamında son teknoloji ekipman ve uzman ekibimizle tedavi öncesi ve sonrası tüm aşamalarda mutlak müşteri memnuniyeti ve kurumsal kalite ilkelerimizden ödün vermeden çalışmalarımıza devam etmekteyiz.</p>
-        <img class="sag" src="{{ asset("front/images/sacekimi2.jpg") }}"alt="">
+        <img class="sag" src="{{ asset("front/images/sacekimi.jpg") }}"alt="">
         <br>
         <h2>Saç Dökülmesine Nedenleri</h2>
         <p>Saç dökülmesinin nedenleri kişiden kişiye değişiklik göstermektedir. Saç dökülmesinin en belirgin ve önemli noktalardan biri de genetik saç dökülmesi olarak bilinir. Stres, sağlıksız yaşam tarzı, ani kilo kayıpları ve sağlıksız diyetler ile hamilelik, hormonlarla alakalı değişimler, ciddi sağlık sorunları gibi nedenler de saç dökülmesinin sebepleri arasında sayılabilir.</p>
@@ -46,7 +46,7 @@
             <li>Kalp ve kronik rahatsızlığı olmayan kişiler</li>
         </ul>
         <p>Yukarıda belirtilen maddelere uygunluk gösteren kişiler doktor kontrolünde kan tahlilleri sonucu herhangi bir probleme rastlanmazsa saç ekimi gerçekleştirebilecek kişilerdir. Aşağıda sıralanan maddeler ise saç ekimi yaptırması uygun olmayan kişilerdir.</p>
-        <img class="sol" src="{{ asset("front/images/sacekimi3.jpg") }}"alt="">
+        <img class="sol" src="{{ asset("front/images/hairph2.jpg") }}"alt="">
 
         <ul>
             <li>Kronik rahatsızlıkları olan kalp, tansiyon, böbrek, karaciğer yetmezliği olan kişiler,</li>
