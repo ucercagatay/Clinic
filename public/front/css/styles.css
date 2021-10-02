@@ -1200,6 +1200,18 @@ section {
     padding: 35px 0;
     background-color: white;
     position: relative;
+    background: url(../images/backnumbers.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#numbers::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 #numbers .numbers-inner{
     display: flex;
