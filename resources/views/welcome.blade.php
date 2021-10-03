@@ -599,7 +599,7 @@
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-            Designed by <a href="https://www.linkedin.com/in/yusuf-çağlar-aksoy-81b4b6207/">YUSUF ÇAĞLAR AKSOY</a> Developed by <a href="https://www.linkedin.com/in/%C3%A7a%C4%9Fatay-ucer-1a7b45196/">HAKTAN ÇAĞATAY ÜÇER</a>
+            Designed by <a href="https://www.linkedin.com/in/yusuf-çağlar-aksoy-81b4b6207/" style="border-right: 1px solid white; padding-right:10px; margin-right: 8px">YUSUF ÇAĞLAR AKSOY</a> Developed by <a href="https://www.linkedin.com/in/%C3%A7a%C4%9Fatay-ucer-1a7b45196/">HAKTAN ÇAĞATAY ÜÇER</a>
         </div>
     </div>
 </footer><!-- End Footer -->
