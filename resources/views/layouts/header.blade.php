@@ -1,4 +1,5 @@
 <body >
+@include('layouts.wp')
 <!-- ======= Top Bar ======= -->
 <div id="inner-topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">

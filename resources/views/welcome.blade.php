@@ -41,20 +41,51 @@
     if ($iphone || $android || $webos || $ipod || $bberry == true)
     {
     ?>
-    <div style="width:300px;position:fixed;top:450px;left: 0px;z-index:99999;font-size:12px;">
-        <a href="https://api.whatsapp.com/send?phone=905073359570">
-            <img style="width:40px;" src="https://demobul.net/images/whatsapp.png" alt="whatsapp">
+
+    <div style="width:300px;position:fixed;bottom: 360px;left: 10px;z-index:99999;font-size:12px;">
+        <a class="wp-button">
+            <img class="wp-button" style=" cursor:pointer; width:40px; position: fixed; bottom: 10px; left: 10px;}" src="https://demobul.net/images/whatsapp.png" alt="whatsapp">
         </a>
     </div>
     <?php }else{?>
-    <div style="width:300px;position:fixed;top:500px;left: 10px;z-index:99999;font-size:12px;">
-        <a href="https://api.whatsapp.com/send?phone=905073359570" target="_blank">
-            <img style="width:50px;" src="https://demobul.net/images/whatsapp.png" alt="whatsapp">
+
+    <div style="width:300px;position:fixed;bottom: 446px;left: 10px;z-index:99999;font-size:12px;">
+        <div class="wp-pop-up" id="wp-web">
+            <i class="fal fa-times" style="position: absolute; right: 15px; top:15px;    opacity: 0.5; font-size: 15px; cursor: pointer"></i>
+            <div class="wp-header">
+
+                <div class="header-logo">
+                    <img class="header-logo-img" src="{{ asset('front/images/Logo1.png') }}" alt="">
+                </div>
+                <h3 class="header-h3">Erkan Şanlı Hair Clinic</h3>
+            </div>
+            <div class="wp-inner">
+                <img class="wp-inner-img" src="{{ asset('front/images/indir.png') }}" alt="">
+                <div class="wp-inner-chat">
+                    <h3 class="wp-inner-chat-inner">Erkan Şanlı Hair Clinic</h3>
+                    <p class="wp-inner-chat-inner">Merhaba👋 <br><br>
+                        Saç Ekimi ve diğer hizmetlerimiz hakkında anında bize ulaşmak bilgi almak ve diğer istekleriniz için bize whatsapp hattımızdan mesaj atabilirsiniz.</p>
+                    <h4 class="wp-inner-chat-inner" id='digital-clock'>15:30</h4>
+                </div>
+            </div>
+            <div class="wp-footer">
+                <a href="https://api.whatsapp.com/send?phone=905073359570" target="_blank">
+                    <div class="wp-footer-inner" href="https://api.whatsapp.com/send?phone=905073359570">
+                        <i class="fab fa-whatsapp" id="wp-footer-logo"></i>
+                        <h4 class="wp-footer-inner-h4">Sohbete Başla</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a class="wp-button"  >
+            <img class="wp-button" style="cursor:pointer; width:50px; position: fixed; bottom: 10px; left: 10px;}" src="https://demobul.net/images/whatsapp.png" alt="whatsapp">
         </a>
     </div>
     <?php } ?>
 </head>
 <body >
+@include('layouts.wp')
+
 <!-- ======= Top Bar ======= -->
 <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
@@ -568,7 +599,7 @@
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-            Designed by <a href="https://www.linkedin.com/in/yusuf-çağlar-aksoy-81b4b6207/">YUSUF ÇAĞLAR AKSOY</a>
+            Designed by <a href="https://www.linkedin.com/in/yusuf-çağlar-aksoy-81b4b6207/">YUSUF ÇAĞLAR AKSOY</a> Developed by <a href="https://www.linkedin.com/in/%C3%A7a%C4%9Fatay-ucer-1a7b45196/">HAKTAN ÇAĞATAY ÜÇER</a>
         </div>
     </div>
 </footer><!-- End Footer -->
@@ -614,5 +645,84 @@ $(document).ready(function(){
     }
 })
 </script>
+<script>
+    $(document).click(function(event){
+        console.log($(event.target).attr('class'))
+        if($("#wp-web").css('display')==='block' && $(event.target) !== $("#wp-web")){
+            if($(event.target).attr('class') === "wp-header" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else if($(event.target).attr('class') === "header-logo" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else if($(event.target).attr('class') === "header-logo-img" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else if($(event.target).attr('class') === "header-h3" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else if($(event.target).attr('class') === "wp-inner" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else if($(event.target).attr('class') === "wp-inner-img" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else if($(event.target).attr('class') === "wp-inner-chat" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else if($(event.target).attr('class') === "wp-inner-chat-inner" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else if($(event.target).attr('class') === "wp-footer" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else if($(event.target).attr('class') === "wp-footer-inner" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else if($(event.target).attr('class') === "fab fa-whatsapp" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else if($(event.target).attr('class') === "wp-footer-inner-h4" ){
+                $("#wp-web").css('display' , 'block');
+            }
+            else{
+                $("#wp-web").css('display' , 'none');
+            }
+        }
+        else if($("#wp-web").css('display')==='none' && ($(event.target).attr('class')==="select" || $(event.target).attr('class')==="wp-button")) {
+            $("#wp-web").css('display' , 'block');
+        }
+    });
 
+</script>
+<script type="text/javascript">
+    function getDateTime() {
+        var now     = new Date();
+        var year    = now.getFullYear();
+        var month   = now.getMonth()+1;
+        var day     = now.getDate();
+        var hour    = now.getHours();
+        var minute  = now.getMinutes();
+        var second  = now.getSeconds();
+
+        if(hour.toString().length == 1) {
+            hour = '0'+hour;
+        }
+        if(minute.toString().length == 1) {
+            minute = '0'+minute;
+        }
+
+        var dateTime =hour+':'+minute;
+        return dateTime;
+    }
+
+    // example usage: realtime clock
+    setInterval(function(){
+        currentTime = getDateTime();
+        document.getElementById("digital-clock").innerHTML = currentTime;
+    }, 1000);
+</script>
+<div class='time-frame'>
+    <div ></div>
+</div>
 </html>

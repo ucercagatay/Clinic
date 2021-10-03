@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.75);
     transition: 0.3s;
     z-index: 999;
 }
@@ -401,7 +401,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile ul {
-    display: block;
+    display: block !important;
     position: absolute;
     top: 55px;
     right: 15px;
@@ -1565,6 +1565,8 @@ section {
 #footer .copyright {
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #0466b780;
 }
 
 #footer .credits {
@@ -1702,9 +1704,127 @@ section {
     .mobile-nav-toggle {
         display: block;
         color: #138cb7;
+        right: 5px;
+        position: absolute;
     }
     .navbar ul {
         display: none;
     }
 }
-
+/*--------------------------------------------------------------
+# Wp-PopUp
+--------------------------------------------------------------*/
+#wp-web{
+    display: none;
+}
+.wp-pop-up{
+    position: fixed;
+    width: 350px;
+    height: 376px;
+    z-index: 9999999;
+}
+.wp-pop-up .wp-header{
+    background-color: #095E54;
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 32px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.wp-pop-up .wp-header .header-logo{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wp-pop-up .wp-header .header-logo img{
+    width: 30px;
+}
+.wp-pop-up .wp-header h3{
+    font-size: 14px;
+    font-weight: bolder;
+    margin-left: 3%;
+    width: 165px;
+    margin-bottom: 0px;
+}
+.wp-pop-up .wp-inner{
+    padding: 20px 20px 20px 10px;
+    background-color: rgb(230, 221, 212);
+    position: relative;
+    overflow: auto;
+    max-height: 382px;
+    display: flex;
+}
+.wp-pop-up .wp-inner::before{
+    display: block;
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.08;
+    background-image: url(https://elfsight.com/assets/chats/patterns/whatsapp.png);
+}
+.wp-pop-up .wp-inner img{
+    height: 35px;
+    z-index: 9;
+}
+.wp-pop-up .wp-inner .wp-inner-chat{
+    padding: 7px 14px 6px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 8px 8px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    transform-origin: center top;
+    z-index: 2;
+    box-shadow: rgb(0 0 0 / 13%) 0px 1px 0.5px;
+    max-width: calc(100% - 66px);
+    color: black;
+}
+.wp-pop-up .wp-inner .wp-inner-chat h3{
+    font-size: 12px;
+    color: #802c2c;
+    font-weight: bolder;
+}
+.wp-pop-up .wp-inner .wp-inner-chat p{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.wp-pop-up .wp-inner .wp-inner-chat h4{
+    font-size: 12px;
+    float:right;
+    opacity: 0.4;
+    margin-bottom: 0;
+}
+.wp-pop-up .wp-footer{
+    padding: 15px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.wp-pop-up .wp-footer .wp-footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4DCA5B;
+    padding: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+.wp-pop-up .wp-footer .wp-footer-inner:hover{
+    background-color: #42ad4e;
+}
+.wp-pop-up .wp-footer .wp-footer-inner i{
+    font-size: 18px;
+}
+.wp-pop-up .wp-footer .wp-footer-inner h4{
+    margin-bottom: 0px;
+    font-size: 14px;
+    margin-left: 5px;
+}
