@@ -1200,13 +1200,12 @@ section {
     padding: 35px 0;
     background-color: white;
     position: relative;
-    background: url(../images/backnumbers.jpg) center center no-repeat;
-    background-size: cover;
+    background: url(../images/1903.png);
     position: relative;
 }
 #numbers::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.58);
     position: absolute;
     top: 0;
     right: 0;
