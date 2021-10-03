@@ -14,7 +14,7 @@ class admin extends Controller
         if(Auth::attempt(['email'=>$request->email,'password'=>$request->password])){
             return redirect()->route('admin.panel');
         }
-        return redirect()->route('admin.login')->withErrors('Giriş bilgileriniz yanlıştır');
+        return redirect()->route('admin.login')->withSuccess(1);
     }
     public function adminOut(Request $request){
         Auth::logout();

@@ -69,8 +69,21 @@
                 Login
             </button>
         </div>
-
+        <div  class="error-message">
+        </div>
     </form>
 </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    if('{{session('success')}}'=='1'){
+        Swal.fire({
+            title: 'Giriş',
+            text: 'Giriş bilgileriniz yanlıştır lütfen tekrar deneyiniz',
+            icon: 'error',
+            button: 'try again',
+        })
+    }
+</script>
 </html>
