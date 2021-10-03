@@ -10,10 +10,7 @@ use Illuminate\Support\Facades\URL;
 
 class feedback extends Controller
 {
-    public function feedback()
-    {
-        return view('iletisim');
-    }
+
 
     public function message(Request $request)
     {

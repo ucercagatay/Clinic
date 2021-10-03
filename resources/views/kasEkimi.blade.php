@@ -6,7 +6,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h2>Kaş Ekimi</h2>
                 <ol>
-                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="{{Route('mainpage.anasayfa')}}">Ana Sayfa</a></li>
                     <li>Kaş Ekimi</li>
                 </ol>
             </div>
