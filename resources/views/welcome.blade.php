@@ -487,7 +487,7 @@
                     <div class="footer-info">
                         <h3>Erkan Şanlı Hair Cilinic</h3>
                         <p>
-                            Cevizlik Mh. Ebuzziya Cd. No:63 <br>
+                            <strong>Adres:</strong>Cevizlik Mh. Ebuzziya Cd. No:63 <br>
                             Bakırköy Istanbul, Turkey<br><br>
                             <strong>Telefon:</strong> +90 (507) 335 95 70<br>
                             <strong>Email:</strong> erkansanlihairclinic@outlook.com<br>
