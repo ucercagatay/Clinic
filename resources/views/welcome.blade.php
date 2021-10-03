@@ -32,6 +32,27 @@
 
     <link rel="icon" href="{{ asset('front/images/eshc.ico') }}"  sizes="16x16">
     <link rel="stylesheet" href="{{asset('front/css/styles.css') }}">
+    <?php
+    $iphone = stristr(@$_SERVER['HTTP_USER_AGENT'],"iPhone");
+    $android = stristr(@$_SERVER['HTTP_USER_AGENT'],"Android");
+    $webos = stristr(@$_SERVER['HTTP_USER_AGENT'],"webOS");
+    $bberry = stristr(@$_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+    $ipod = stristr(@$_SERVER['HTTP_USER_AGENT'],"iPod");
+    if ($iphone || $android || $webos || $ipod || $bberry == true)
+    {
+    ?>
+    <div style="width:300px;position:fixed;top:450px;left: 0px;z-index:99999;font-size:12px;">
+        <a href="https://api.whatsapp.com/send?phone=905073359570">
+            <img style="width:40px;" src="https://demobul.net/images/whatsapp.png" alt="whatsapp">
+        </a>
+    </div>
+    <?php }else{?>
+    <div style="width:300px;position:fixed;top:500px;left: 10px;z-index:99999;font-size:12px;">
+        <a href="https://api.whatsapp.com/send?phone=905073359570" target="_blank">
+            <img style="width:50px;" src="https://demobul.net/images/whatsapp.png" alt="whatsapp">
+        </a>
+    </div>
+    <?php } ?>
 </head>
 <body >
 <!-- ======= Top Bar ======= -->
@@ -405,8 +426,8 @@
                         <i class="fal fa-clock"></i>
                         <h4>Açık Saatler:</h4>
                         <p>
-                            Monday-Saturday:<br>
-                            11:00 AM - 2300 PM
+                           Pazartesi-Cumartesi:<br>
+                            10:00  - 18:00
                         </p>
                     </div>
 
@@ -593,4 +614,5 @@ $(document).ready(function(){
     }
 })
 </script>
+
 </html>
