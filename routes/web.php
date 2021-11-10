@@ -26,11 +26,18 @@ Route::prefix('/es1609')->middleware('isLogin')->name('admin.')->group(function 
     Route::post('/panel/messages',[Controllers\admin::class,'destroy'])->name('messages.post');
     Route::get('/panel/subscribers',[Controllers\subscribers::class,'showSubscriber'])->name('subscribers');
     Route::post('/panel/subscribers',[Controllers\admin::class,'delete'])->name('subscribers.post');
+    Route::get('/panel/editcontent',[Controllers\admin::class,'editContent'])->name('editContent');
+    Route::post('/panel/editcontent/deletecontent',[Controllers\admin::class,'deleteContent'])->name('deleteContent');
+    Route::get('/panel/editcontent/newcontent/{id}',[Controllers\admin::class,'newContent'])->name('newcontent');
+    Route::post('/panel/editcontent/newcontent/new/{id}',[Controllers\admin::class,'updateContent'])->name('updateContent');
+
 });
 //Sayfalar
 //Anasayfa abonepost
 Route::prefix('/')->name('mainpage.')->middleware('wordfilter')->group(function(){
-    Route::get('/', function () {return view('welcome');})->name('anasayfa');
+    Route::get('/', function () {
+        $contents=\App\Models\ContentModel::where('title','Hakkımızda')->get();
+        return view('welcome',compact('contents'));})->name('anasayfa');
     Route::post('/subscribe-ol' , [Controllers\Subscribers::class,'subscribe'])->name('anasayfa.post');
     Route::post('/mail-gonder',[Controllers\feedback::class,'message'])->name('erkansanli.post');
 });

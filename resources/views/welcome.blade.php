@@ -85,7 +85,7 @@
 </head>
 <body >
 @include('layouts.wp')
-
+@foreach($contents as $content)
 <!-- ======= Top Bar ======= -->
 <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
@@ -175,11 +175,10 @@
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                 <div class="section-title">
-                    <p>Hakkımızda</p>
+                    <p>{{$content->title}}</p>
                 </div>
                 <p class="fst-italic">
-                    Erkan Şanlı saç ekimi ve tüm estetik branşlarda tüm dünyada hizmet vermektedir. Kuruluşu 2002
-                    yılında merkez İstanbul olarak Diyarbakır-Fas-Irak/Musul -Irak/Erbil-Kuveyt-Bahreyn olarak 7 Şubemiz ile hizmet vermekteyiz..
+                    {{$content->icerik}}
                 </p>
             </div>
         </div>
@@ -301,7 +300,7 @@
                             <h3>KAŞ EKİMİ</h3>
                             <p class="fst-italic">
                                 Bakışlarınıza anlam katmanın en kalıcı yolu kaş ekimidir. Kadın ve erkek farketmeksizin bir hastalık,kaza ya da kozmetiksel olarak istediğiniz görüntüye kavuşmanızı sağlar.</p>
-                            <a href="#" class="book-a-table-btn">Daha Fazla <i class="fal fa-long-arrow-right"></i></a>
+                            <a href="{{Route('page.eyebrowpage')}}" class="book-a-table-btn">Daha Fazla <i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div><!-- End testimonial item -->
@@ -602,6 +601,7 @@
             Designed by <a href="https://www.linkedin.com/in/yusuf-çağlar-aksoy-81b4b6207/" style="border-right: 1px solid white; padding-right:10px; margin-right: 8px">YUSUF ÇAĞLAR AKSOY</a> Developed by <a href="https://www.linkedin.com/in/%C3%A7a%C4%9Fatay-ucer-1a7b45196/">HAKTAN ÇAĞATAY ÜÇER</a>
         </div>
     </div>
+    @endforeach
 </footer><!-- End Footer -->
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="far fa-arrow-up"></i></a>

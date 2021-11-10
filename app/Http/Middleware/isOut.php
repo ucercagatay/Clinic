@@ -11,7 +11,7 @@ class isOut
     public function handle(Request $request, Closure $next)
     {
         if(Auth::check()){
-            return redirect()->route('panel')->withErrors('Önce çıkış yapmalısınız');
+            return redirect()->route('admin.panel')->withErrors('Önce çıkış yapmalısınız');
 
         }
         return $next($request);

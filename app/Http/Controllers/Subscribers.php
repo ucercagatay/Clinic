@@ -30,11 +30,6 @@ class Subscribers extends Controller
                 ]);
              return back()->withSuccess('1');
 
-
-
-
-
-
     }
 
     public function showSubscriber(){

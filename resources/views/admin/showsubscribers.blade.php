@@ -1,5 +1,8 @@
 @extends('admin.layouts.master')
 @section('content')
+    @php
+        $number=1;
+    @endphp
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             Aboneler
@@ -12,7 +15,7 @@
                 <table class="table table-striped table-bordered">
                     <thead>
                  <tr>
-                     <th>İd</th>
+                     <th>Adet</th>
                      <th>Email</th>
                      <td>Eylemler</td>
 
@@ -22,7 +25,7 @@
                     <tbody>
                     @foreach($subscribers as $subscriber)
                       <tr>
-                          <td>{{$subscriber->id}}</td>
+                          <td>  {{$number}}</td>
                           <td>{{$subscriber->email}}</td>
                           <td>
                               <form method="post" action="{{route('admin.subscribers.post')}}" >
@@ -33,6 +36,9 @@
                               </form></td>
                       </tr>
                         <br>
+                      @php
+                          $number++
+                      @endphp
                         @endforeach
 
 

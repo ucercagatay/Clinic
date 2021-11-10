@@ -2,29 +2,39 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ContentModel;
 use Illuminate\Http\Request;
 
 class pages extends Controller
 {
     public function hairpages(){
-        return view('inner-page');
+        $contents1=ContentModel::where('title', 'Saç Ekimi')->get();
+        $contents2=ContentModel::where('title', 'Saç Ekimi Kimlere Uygulanmalı?')->get();
+        $contents3=ContentModel::where('name', '3.parça')->get();
+        return view('inner-page',compact('contents1','contents2','contents3'));
     }
     public function esteticpages(){
-        return view('gözBurunEstetik');
+        $contents=ContentModel::where('title','Burun Estetiği')->get();
+        return view('gözBurunEstetik',compact('contents'));
     }
     public function eyebrowpages(){
-        return view('kasEkimi');
+        $contents=ContentModel::where('title','Kaş Ekimi')->get();
+        return view('kasEkimi',compact('contents'));
     }
     public function beardmustache(){
-        return view('sakalBiyikEkimi');
+        $contents=ContentModel::where('title','Sakal-Bıyık Ekimi')->get();
+        return view('sakalBiyikEkimi',compact('contents'));
     }
     public function mezoterapi(){
-        return view('mezoterapi');
+        $contents=ContentModel::where('title','Mezoterapi')->get();
+        return view('mezoterapi',compact('contents'));
     }
     public function prptedavi(){
-        return view('prpTedavi');
+    $contents=ContentModel::where('title','PRP Tedavisi')->get();
+        return view('prpTedavi',compact('contents'));
     }
     public function hairlaser(){
-        return view('sacLazeri');
+        $contents=ContentModel::where('title','Saç Lazeri')->get();
+        return view('sacLazeri',compact('contents'));
     }
 }

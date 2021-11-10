@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+    @foreach($contents as $content)
     <section class="breadcrumbs">
         <div class="container">
 
@@ -17,30 +18,23 @@
     <section class="inner-page">
         <div class="container">
             <img class="sol" src="{{ asset("front/images/inner-page/prp1.jpg") }}" alt="">
-            <h2>PRP Tedavisi</h2>
-            <p>PRP; (Platelet rich plasma)  kişinin vücudundan küçük bir miktar kan alındıktan sonra kanın özel bir işlem ile plazmasının ayrıştırılarak,
-                vücuda enjeksiyon yoluyla geri verilmesi işlemidir. Elde edilen plazma, “platelet” denilen hücrelerden oldukça zengindir.
-                Vücuttaki temel görevi kanın pıhtılaşmasını sağlamak olan plateletler, içerdikleri büyüme faktörleri sayesinde yara iyileşmesinde önemli role sahiptir.
-            </p>
-            <p>PRP; (Platelet rich plasma)  kişinin vücudundan küçük bir miktar kan alındıktan sonra kanın özel bir işlem ile plazmasının ayrıştırılarak,
-                vücuda enjeksiyon yoluyla geri verilmesi işlemidir. Elde edilen plazma, “platelet” denilen hücrelerden oldukça zengindir.
+            <h2>{{$content->title}}</h2>
+            <p>{{$content->icerik1}}
             </p>
 
-            <p>PRP tedavisi ile kişinin kendi kanıyla vücudundaki bazı hastalıkları iyileştirmek ve cilt gençleştirmek mümkündür.
-                İlaç yerine kişinin kendi kanının kullanıldığı PRP tedavisinde özellikle çevresel ve genetik faktörlerle birlikte yavaşlayan hücre yenilenmesinin önüne geçilir.
-                PRP; saç dökülmesinden, cilt gençleştirmeye, ağrı tedavisinden, ortopedik pek çok hastalığın tedavisinde kullanılır.
-                PRP işlemi uzman doktorlar tarafından uygulanması gereken bir tedavi yöntemidir.
+
+            <p>{{$content->icerik2}}
             </p>
             <img class="sag" src="{{ asset("front/images/inner-page/prp2.jpg") }}" alt="">
-            <li>Öncelikle hastadan alınan kan steril şartlarda özel bir tüpün içine konulur.</li>
-            <li>Sonrasında kan içinde jel bulunan tüpe yerleştirilir.</li>
-            <li>Santrifüje konulan tüpteki kanın içindeki maddeler 5-8 dakika içinde ayrıştırılır.</li>
-            <li>Kanın trombositlerden ve büyüme faktörlerinden zengin plazma kısmı ayrıştırılmış olur.</li>
-            <li>Elde edilen karışım enjeksiyon yöntemi ile ilgili alana uygulanır.</li>
+            <li>{{$content->icerik3}}</li>
+            <li>{{$content->icerik4}}</li>
+            <li>{{$content->icerik5}}</li>
+            <li>{{$content->icerik6}}</li>
+            <li>{{$content->icerik7}}</li>
             <p></p>
-            <p>PRP 2-4 hafta aralıklarla ortalama 3-4 seans, kişinin ihtiyacına göre mezoterapi ile kombine edilerek uygulanır.
-                PRP kürü tamamlandıktan sonra yılda 1-2 kez enjeksiyonlarla işlemin devamı sağlanabilir.
+            <p>{{$content->icerik8}}
             </p>
         </div>
     </section>
+    @endforeach
 @endsection

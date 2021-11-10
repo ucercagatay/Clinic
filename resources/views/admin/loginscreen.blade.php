@@ -43,7 +43,7 @@
     <div class="mavi-Logo">
     </div>
     <img class="pattern" src="{{asset("admin/logscreen/images/login.png")}}" alt="">
-    <form  method="post" action="{{route('admin.login.post')}}"class="login100-form validate-form">
+    <form  method="post" action="{{route('admin.login.post')}}" class="login100-form validate-form">
         @csrf
 
 
