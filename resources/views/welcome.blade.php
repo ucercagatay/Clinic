@@ -85,7 +85,6 @@
 </head>
 <body >
 @include('layouts.wp')
-@foreach($contents as $content)
 <!-- ======= Top Bar ======= -->
 <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
@@ -173,16 +172,17 @@
                     <img src="{{ asset('front/images/biz.jpg') }}" alt="">
                 </div>
             </div>
+            @foreach($contents as $content)
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                 <div class="section-title">
                     <p>{{$content->title}}</p>
                 </div>
                 <p class="fst-italic">
-                    {{$content->icerik}}
+                    {{$content->icerik1}}
                 </p>
             </div>
         </div>
-
+@endforeach
     </div>
 </section><!-- End About Section -->
 <div id="photos">
@@ -601,9 +601,8 @@
             Designed by <a href="https://www.linkedin.com/in/yusuf-çağlar-aksoy-81b4b6207/" style="border-right: 1px solid white; padding-right:10px; margin-right: 8px">YUSUF ÇAĞLAR AKSOY</a> Developed by <a href="https://www.linkedin.com/in/%C3%A7a%C4%9Fatay-ucer-1a7b45196/">HAKTAN ÇAĞATAY ÜÇER</a>
         </div>
     </div>
-    @endforeach
+
 </footer><!-- End Footer -->
-<div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="far fa-arrow-up"></i></a>
 
 
